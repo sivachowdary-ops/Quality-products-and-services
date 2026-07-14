@@ -13,12 +13,12 @@ export const metadata = {
 
 export default async function FireEquipmentPage() {
   const subCategories = await Promise.all([
-    getPexelsImage("red fire extinguisher closeup", "square"),
-    getPexelsImage("fire hose reel", "square"),
-    getPexelsImage("fire blanket safety", "square"),
-    getPexelsImage("smoke detector ceiling", "square"),
-    getPexelsImage("fire sprinkler system", "square"),
-    getPexelsImage("fire suppression system", "square"),
+    getPexelsImage("red fire extinguisher, studio shot, white background", "square"),
+    getPexelsImage("fire hose reel hydrant, clean background", "square"),
+    getPexelsImage("fire blanket safety, white background", "square"),
+    getPexelsImage("smoke detector ceiling, white background", "square"),
+    getPexelsImage("fire sprinkler system ceiling, clean background", "square"),
+    getPexelsImage("fire suppression system gas tank, clean background", "square"),
   ]).then((images) => [
     { title: "Fire Extinguishers", img: images[0], desc: "ABC, CO2, foam, and DCP extinguishers for all fire classes." },
     { title: "Hose Reels & Hydrant Systems", img: images[1], desc: "Complete hose reel drums, hydrant valves, and landing valves." },

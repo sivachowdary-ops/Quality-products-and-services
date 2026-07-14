@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card, SquareImageCard } from "@/components/ui/Card";
-import { ShieldCheck, Clock, Tag, Users, Sparkles, ArrowRight } from "lucide-react";
+import { ShieldCheck, Clock, Tag, Users, Sparkles } from "lucide-react";
 import { HorizontalScroll } from "@/components/ui/HorizontalScroll";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,35 +11,35 @@ export default function Home() {
   const products = [
     {
       title: "Fire Fighting Equipment",
-      description: "Extinguishers, hydrants, hoses, smoke detectors, and suppression systems. Click to view fire fighting equipment →",
+      description: "Extinguishers, hydrants, hoses, smoke detectors, and suppression systems.",
       imageUrl: "/images/fire-equipment.webp",
       label: "Products",
       link: "/products/fire-equipment"
     },
     {
       title: "Safety Equipment",
-      description: "PPE, fall protection, gas detection, road safety items, ESD shoes, and safety signage. Click to view safety equipment →",
+      description: "PPE, fall protection, gas detection, road safety items, ESD shoes, and safety signage.",
       imageUrl: "/images/safety-equipment.webp",
       label: "Products",
       link: "/products/safety-equipment"
     },
     {
       title: "Housekeeping & Sanitary Solutions",
-      description: "Cleaning chemicals, paper tissues, automatic dispensers, and waste bins. Click to view housekeeping & sanitary solutions →",
+      description: "Cleaning chemicals, paper tissues, automatic dispensers, and waste bins.",
       imageUrl: "/images/housekeeping-sanitary.webp",
       label: "Products",
       link: "/products/housekeeping-sanitary-solutions"
     },
     {
       title: "Stationery Solutions",
-      description: "Office writing instruments, notebook supplies, folders, calculators, whiteboards, and copier papers. Click to view stationery solutions →",
+      description: "Office writing instruments, notebook supplies, folders, calculators, whiteboards, and copier papers.",
       imageUrl: "/images/stationery-solutions.webp",
       label: "Products",
       link: "/products/stationery-solutions"
     },
     {
       title: "Electrical Materials",
-      description: "Flexible wires, power cables, modular switches, DB boxes, PVC conduits, and LED bulbs. Click to view electrical materials →",
+      description: "Flexible wires, power cables, modular switches, DB boxes, PVC conduits, and LED bulbs.",
       imageUrl: "/images/electrical-materials.webp",
       label: "Products",
       link: "/products/electrical-materials"
@@ -49,14 +49,14 @@ export default function Home() {
   const services = [
     {
       title: "Construction Works",
-      description: "Comprehensive false ceiling, plumbing, electrical installation, flooring, painting, and civil contracting. Click to view construction works →",
+      description: "Comprehensive false ceiling, plumbing, electrical installation, flooring, painting, and civil contracting.",
       imageUrl: "/images/construction-works.webp",
       label: "Services",
       link: "/services/construction-works"
     },
     {
       title: "Interior Works",
-      description: "Custom wardrobes, modern modular kitchen layouts, living rooms, and office designs. Click to view interior works →",
+      description: "Custom wardrobes, modern modular kitchen layouts, living rooms, and office designs.",
       imageUrl: "/images/interior-works.webp",
       label: "Services",
       link: "/services/interior-works"
@@ -140,7 +140,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section A — Our Products */}
+      {/* Section A — Our Products (Using Flex Wrap Centering for 5 items) */}
       <section id="products" className="py-16 md:py-24 bg-[var(--color-surface-white)]">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <SectionHeading 
@@ -148,32 +148,36 @@ export default function Home() {
             subtitle="Everything you need to supply your workspaces and project sites, sourced and delivered across India."
             className="mb-8 md:mb-12"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
             {products.map((prod, i) => (
-              <Link href={prod.link} key={i} className="block focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-[var(--radius-lg)]">
-                <SquareImageCard 
-                  imageUrl={prod.imageUrl}
-                  imageAlt={prod.title}
-                  title={prod.title}
-                  description={prod.description}
-                  categoryLabel={prod.label}
-                  className="h-full"
-                />
+              <Link 
+                href={prod.link} 
+                key={i} 
+                className="group flex flex-col bg-[var(--color-surface-white)] rounded-[var(--radius-lg)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] border border-[#E8EAED] overflow-hidden hover:-translate-y-1 transition-all duration-[var(--animate-base)] ease-out focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] h-full w-full md:w-[calc(50%-12px)] lg:w-[calc(33.33%-22px)] max-w-sm md:max-w-none"
+              >
+                <div className="relative aspect-square overflow-hidden">
+                  <Image
+                    src={prod.imageUrl}
+                    alt={prod.title}
+                    fill
+                    className="object-cover transition-transform duration-[var(--animate-base)] ease-out group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute top-4 left-4 bg-[var(--color-surface-white)] text-[var(--color-text-on-light)] px-3 py-1 rounded-[var(--radius-sm)] text-sm shadow-sm z-10 font-medium">
+                    {prod.label}
+                  </div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col flex-grow">
+                  <h4 className="text-lg font-semibold mb-2 text-[var(--color-text-on-light)]">{prod.title}</h4>
+                  <p className="text-[var(--color-text-on-light-muted)] text-sm mb-6 flex-grow">{prod.description}</p>
+                  
+                  {/* Premium Navy CTA Button - turns Gold on hover */}
+                  <div className="w-full bg-[var(--color-brand-navy)] text-white text-center py-2.5 px-4 rounded-[var(--radius-md)] text-sm font-medium transition-colors group-hover:bg-[var(--color-brand-gold)] group-hover:text-[var(--color-brand-navy)] mt-auto">
+                    Click to view {prod.title.toLowerCase()}
+                  </div>
+                </div>
               </Link>
             ))}
-            
-            {/* 6th Card - View All Link */}
-            <Link href="/products" className="block focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-[var(--radius-lg)] h-full">
-              <Card interactive className="flex flex-col items-center justify-center text-center p-8 h-full bg-[var(--color-brand-navy)] text-[var(--color-text-on-dark)] border-none min-h-[300px]">
-                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4">
-                  <ArrowRight className="w-8 h-8 text-[var(--color-brand-gold)]" />
-                </div>
-                <h4 className="text-xl font-bold font-heading mb-2">View All Products</h4>
-                <p className="text-[var(--color-text-on-dark-muted)] text-sm max-w-[200px]">
-                  Click to view full products catalog.
-                </p>
-              </Card>
-            </Link>
           </div>
         </div>
       </section>
@@ -186,17 +190,34 @@ export default function Home() {
             subtitle="End-to-end contracting, false ceilings, plumbing, electrical, and custom interior execution across Andhra Pradesh and Telangana."
             className="mb-8 md:mb-12"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
             {services.map((svc, i) => (
-              <Link href={svc.link} key={i} className="block focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-[var(--radius-lg)]">
-                <SquareImageCard 
-                  imageUrl={svc.imageUrl}
-                  imageAlt={svc.title}
-                  title={svc.title}
-                  description={svc.description}
-                  categoryLabel={svc.label}
-                  className="h-full"
-                />
+              <Link 
+                href={svc.link} 
+                key={i} 
+                className="group flex flex-col bg-[var(--color-surface-white)] rounded-[var(--radius-lg)] shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] border border-[#E8EAED] overflow-hidden hover:-translate-y-1 transition-all duration-[var(--animate-base)] ease-out focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] h-full w-full md:w-[calc(50%-12px)] max-w-sm md:max-w-none"
+              >
+                <div className="relative aspect-square overflow-hidden">
+                  <Image
+                    src={svc.imageUrl}
+                    alt={svc.title}
+                    fill
+                    className="object-cover transition-transform duration-[var(--animate-base)] ease-out group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute top-4 left-4 bg-[var(--color-surface-white)] text-[var(--color-text-on-light)] px-3 py-1 rounded-[var(--radius-sm)] text-sm shadow-sm z-10 font-medium">
+                    {svc.label}
+                  </div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col flex-grow">
+                  <h4 className="text-lg font-semibold mb-2 text-[var(--color-text-on-light)]">{svc.title}</h4>
+                  <p className="text-[var(--color-text-on-light-muted)] text-sm mb-6 flex-grow">{svc.description}</p>
+                  
+                  {/* Premium Navy CTA Button - turns Gold on hover */}
+                  <div className="w-full bg-[var(--color-brand-navy)] text-white text-center py-2.5 px-4 rounded-[var(--radius-md)] text-sm font-medium transition-colors group-hover:bg-[var(--color-brand-gold)] group-hover:text-[var(--color-brand-navy)] mt-auto">
+                    Click to view {svc.title.toLowerCase()}
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
