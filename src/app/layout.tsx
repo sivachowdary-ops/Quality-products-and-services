@@ -19,7 +19,39 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Quality Products & Services | KPHB, Hyderabad",
-  description: "Complete Solutions Under One Roof: Construction & Interior Works, Fire Fighting, Safety & Road Safety Equipment, Cleaning & Housekeeping Supplies.",
+  description: "Complete Solutions Under One Roof: Fire Equipment, Safety Equipment, Housekeeping & Sanitary Solutions, Stationery, Electrical Materials, Construction Works & Interior Works. Products supplied across India.",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Quality Products & Services",
+  "description": "B2B supplier of fire equipment, safety equipment, housekeeping & sanitary solutions, stationery, and electrical materials across India. Construction and interior works services in AP & Telangana.",
+  "url": "https://quality-products-and-services.vercel.app",
+  "telephone": "+919993454442",
+  "email": "qualityproductsandservices999@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Flat No. 47, Venkata Rama Residency, Road No. 3, Sri Sai Nagar, KPHB",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500085",
+    "addressCountry": "IN"
+  },
+  "openingHours": "Mo-Sa 09:00-18:00",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Products & Services",
+    "itemListElement": [
+      { "@type": "OfferCatalog", "name": "Fire Fighting Equipment" },
+      { "@type": "OfferCatalog", "name": "Safety Equipment" },
+      { "@type": "OfferCatalog", "name": "Housekeeping & Sanitary Solutions" },
+      { "@type": "OfferCatalog", "name": "Stationery Solutions" },
+      { "@type": "OfferCatalog", "name": "Electrical Materials" },
+      { "@type": "OfferCatalog", "name": "Construction Works" },
+      { "@type": "OfferCatalog", "name": "Interior Works" }
+    ]
+  }
 };
 
 export default function RootLayout({
@@ -29,6 +61,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.variable} ${poppins.variable} antialiased flex flex-col min-h-screen pt-[72px]`}>
         <Navbar />
         <main className="flex-grow">

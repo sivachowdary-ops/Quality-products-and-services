@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Menu, X, ChevronDown, Wrench, Shield, Sparkles, FlameKindling, HardHat, Package } from "lucide-react";
+import { Menu, X, ChevronDown, Wrench, Sparkles, FlameKindling, HardHat, NotebookPen, Zap, PaintBucket } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
@@ -13,18 +13,21 @@ const NAV_LINKS = [
   { name: "About Us", href: "/about" },
   {
     name: "Products",
-    href: "/services",
+    href: "/products",
     dropdown: [
-      { name: "Fire Fighting Equipment", href: "/services/fire-safety-equipment", icon: FlameKindling },
-      { name: "Safety Equipment", href: "/services/fire-safety-equipment", icon: HardHat },
-      { name: "Cleaning & Sanitary Supplies", href: "/services/cleaning-supplies", icon: Sparkles },
+      { name: "Fire Fighting Equipment", href: "/products/fire-equipment", icon: FlameKindling },
+      { name: "Safety Equipment", href: "/products/safety-equipment", icon: HardHat },
+      { name: "Housekeeping & Sanitary", href: "/products/housekeeping-sanitary-solutions", icon: Sparkles },
+      { name: "Stationery Solutions", href: "/products/stationery-solutions", icon: NotebookPen },
+      { name: "Electrical Materials", href: "/products/electrical-materials", icon: Zap },
     ],
   },
   {
     name: "Services",
     href: "/services",
     dropdown: [
-      { name: "Construction & Interior Works", href: "/services/construction-works", icon: Wrench },
+      { name: "Construction Works", href: "/services/construction-works", icon: Wrench },
+      { name: "Interior Works", href: "/services/interior-works", icon: PaintBucket },
     ],
   },
   { name: "Location", href: "/location" },
@@ -77,8 +80,8 @@ export const Navbar = () => {
         <nav className="hidden lg:flex items-center gap-6">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href || 
-              (link.name === "Products" && (pathname.startsWith("/services/fire") || pathname.startsWith("/services/cleaning"))) ||
-              (link.name === "Services" && pathname.startsWith("/services/construction"));
+              (link.name === "Products" && pathname.startsWith("/products")) ||
+              (link.name === "Services" && pathname.startsWith("/services"));
             
             return (
               <div key={link.name} className="relative group">

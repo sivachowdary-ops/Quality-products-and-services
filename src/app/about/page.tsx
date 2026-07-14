@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "About Us | Quality Products & Services",
-  description: "Learn about Quality Products & Services, your trusted partner in Hyderabad for construction works, safety gear, and cleaning supplies.",
+  description: "Learn about Quality Products & Services — supplying fire, safety, housekeeping, stationery, and electrical products across India, with construction and interior services in AP & Telangana.",
 };
 
 export default async function AboutPage() {
@@ -58,13 +58,13 @@ export default async function AboutPage() {
               />
               <div className="text-[var(--color-text-on-light-muted)] space-y-4 leading-relaxed">
                 <p>
-                  Welcome to Quality Products & Services, based in the heart of KPHB, Hyderabad. We are a dedicated B2B supplier and service provider designed to meet the rigorous demands of modern facilities, builders, and corporate procurement teams.
+                  Welcome to Quality Products & Services, headquartered at Sri Sai Nagar, KPHB, Hyderabad. We are a dedicated B2B supplier and service provider designed to meet the rigorous demands of modern facilities, builders, and corporate procurement teams.
                 </p>
                 <p>
-                  Our foundation was built on a simple premise: provide reliable, top-tier products without compromising on quality or service. Over the years, we have grown into a comprehensive "One-Stop Solution" operating across three main verticals: Construction & Interior Works, Fire & Safety Equipment, and Cleaning & Housekeeping Supplies.
+                  Our foundation was built on a simple premise: provide reliable, top-tier products without compromising on quality or service. Over the years, we have grown into a comprehensive &ldquo;One-Stop Solution&rdquo; spanning seven verticals: Fire Fighting Equipment, Safety Equipment, Housekeeping & Sanitary Solutions, Stationery Solutions, and Electrical Materials on the products side — plus Construction Works and Interior Works as full-service execution offerings.
                 </p>
                 <p>
-                  Whether it's executing a flawless false ceiling project, equipping a facility with essential firefighting gear, or keeping offices pristine with professional cleaning chemicals, our experienced team ensures total satisfaction.
+                  Whether it&apos;s supplying industrial-grade safety gear to a factory floor, outfitting an entire office with stationery and electrical materials, executing a flawless false ceiling project, or designing a modern modular kitchen — our experienced team ensures total satisfaction.
                 </p>
               </div>
             </div>
@@ -106,8 +106,11 @@ export default async function AboutPage() {
             <MapPin className="w-8 h-8" />
           </div>
           <h2 className="text-3xl font-bold font-heading text-[var(--color-text-on-light)] mb-4">Areas We Serve</h2>
+          <p className="text-[var(--color-text-on-light-muted)] text-lg mb-4">
+            We supply our full product range — Fire Equipment, Safety Equipment, Housekeeping & Sanitary Solutions, Stationery, and Electrical Materials — <strong className="text-[var(--color-text-on-light)]">across India</strong>.
+          </p>
           <p className="text-[var(--color-text-on-light-muted)] text-lg mb-8">
-            Operating from KPHB, Hyderabad, we proudly serve corporate and industrial clients across the greater Hyderabad region and surrounding areas.
+            Our construction and interior execution services are currently available across <strong className="text-[var(--color-text-on-light)]">Andhra Pradesh and Telangana</strong>.
           </p>
           <Button variant="whatsapp" className="text-lg" asChild>
             <a href="https://wa.me/919993454442?text=Hi%2C%20I%27d%20like%20to%20enquire%20if%20you%20serve%20my%20area.">

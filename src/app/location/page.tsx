@@ -6,7 +6,7 @@ import { getPexelsImage } from "@/lib/pexels";
 
 export const metadata = {
   title: "Location & Areas We Serve | Quality Products & Services",
-  description: "Find Quality Products & Services in KPHB, Hyderabad. We serve the entire Telangana region.",
+  description: "Find Quality Products & Services at Sri Sai Nagar, KPHB, Hyderabad 500085. Products supplied across India; construction & interior services in AP & Telangana.",
 };
 
 export default async function LocationPage() {
@@ -34,7 +34,7 @@ export default async function LocationPage() {
             Location & Areas We Serve
           </h1>
           <p className="text-[var(--color-text-on-dark-muted)] text-lg max-w-2xl mx-auto">
-            Conveniently located in KPHB, serving businesses across Hyderabad.
+            Headquartered in KPHB, Hyderabad. Products delivered across India.
           </p>
         </div>
       </section>
@@ -63,8 +63,9 @@ export default async function LocationPage() {
                     <h4 className="font-semibold text-lg mb-1">Address</h4>
                     <p className="text-[var(--color-text-on-dark-muted)]">
                       Quality Products & Services<br />
-                      KPHB, Hyderabad,<br />
-                      Telangana
+                      Flat No. 47, Venkata Rama Residency,<br />
+                      Road No. 3, Sri Sai Nagar, KPHB,<br />
+                      Hyderabad – 500085
                     </p>
                   </div>
                 </div>
@@ -94,8 +95,11 @@ export default async function LocationPage() {
 
               <div>
                 <h3 className="text-2xl font-bold font-heading text-[var(--color-text-on-light)] mb-4">Areas We Serve</h3>
+                <p className="text-[var(--color-text-on-light-muted)] leading-relaxed mb-3">
+                  <strong className="text-[var(--color-text-on-light)]">Products (India-wide):</strong> We supply Fire Equipment, Safety Equipment, Housekeeping & Sanitary Solutions, Stationery, and Electrical Materials across India, including major cities like Hyderabad, Bangalore, Chennai, Mumbai, and Delhi.
+                </p>
                 <p className="text-[var(--color-text-on-light-muted)] leading-relaxed">
-                  We cater to the entirety of Hyderabad and Secunderabad, including major IT hubs like HITEC City, Madhapur, Gachibowli, and industrial sectors such as Balanagar, Jeedimetla, and Patancheru. For large corporate orders, we can facilitate delivery across Telangana.
+                  <strong className="text-[var(--color-text-on-light)]">Services (AP & Telangana):</strong> Our Construction Works and Interior Works execution services are currently available across Andhra Pradesh and Telangana, covering Hyderabad, Secunderabad, HITEC City, Gachibowli, Madhapur, Balanagar, Jeedimetla, Patancheru, and surrounding areas.
                 </p>
               </div>
             </div>
@@ -104,14 +108,14 @@ export default async function LocationPage() {
             <div className="h-[400px] lg:h-auto min-h-[500px] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-card)] border border-[#E8EAED] relative">
               {/* Google Maps Embed (KPHB general area since exact address isn't confirmed) */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30441.776609950587!2d78.3800613!3d17.4897042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9173003058cb%3A0xc39247c7ce1a5e17!2sKukatpally%20Housing%20Board%20Colony%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.123456789!2d78.3835!3d17.4897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9173003058cb%3A0xc39247c7ce1a5e17!2sSri+Sai+Nagar%2C+KPHB%2C+Hyderabad%2C+Telangana+500085!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0, position: "absolute", inset: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Google Maps Location - KPHB, Hyderabad"
+                title="Google Maps Location - Sri Sai Nagar, KPHB, Hyderabad 500085"
               ></iframe>
             </div>
 

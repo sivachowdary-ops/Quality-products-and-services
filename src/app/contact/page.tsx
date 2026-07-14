@@ -71,7 +71,7 @@ export default function ContactPage() {
               <div>
                 <h4 className="font-semibold text-lg text-[var(--color-text-on-light)]">Visit Us</h4>
                 <p className="text-[var(--color-text-on-light-muted)]">
-                  KPHB, Hyderabad,<br />Telangana
+                  Flat No. 47, Venkata Rama Residency,<br />Road No. 3, Sri Sai Nagar, KPHB,<br />Hyderabad – 500085
                 </p>
               </div>
             </Card>
@@ -122,9 +122,13 @@ export default function ContactPage() {
                     className="border border-[#E8EAED] rounded-[var(--radius-md)] px-4 py-3 focus:outline-none focus:border-[var(--color-brand-gold)] focus:ring-1 focus:ring-[var(--color-brand-gold)] transition-colors bg-white"
                   >
                     <option value="General Enquiry">General Enquiry</option>
-                    <option value="Construction & Interior Works">Construction & Interior Works</option>
-                    <option value="Fire & Safety Equipment">Fire & Safety Equipment</option>
-                    <option value="Cleaning & Housekeeping Supplies">Cleaning & Housekeeping Supplies</option>
+                    <option value="Fire Fighting Equipment">Fire Fighting Equipment</option>
+                    <option value="Safety Equipment">Safety Equipment</option>
+                    <option value="Housekeeping & Sanitary Solutions">Housekeeping & Sanitary Solutions</option>
+                    <option value="Stationery Solutions">Stationery Solutions</option>
+                    <option value="Electrical Materials">Electrical Materials</option>
+                    <option value="Construction Works">Construction Works</option>
+                    <option value="Interior Works">Interior Works</option>
                   </select>
                 </div>
 

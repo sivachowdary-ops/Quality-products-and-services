@@ -23,7 +23,7 @@ export const Footer = () => {
               </div>
             </Link>
             <p className="text-[var(--color-text-on-dark-muted)] text-sm mb-6 leading-relaxed">
-              Complete Solutions Under One Roof. We provide reliable construction works, safety equipment, and cleaning supplies to businesses across Hyderabad.
+              Complete Solutions Under One Roof. We supply premium safety, fire, housekeeping, stationery, and electrical products across India, and offer professional construction and interior works in AP & Telangana.
             </p>
           </div>
 
@@ -46,21 +46,45 @@ export const Footer = () => {
 
           {/* Products & Services Links */}
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-6">Products & Services</h4>
-            <ul className="flex flex-col gap-3">
+            <h4 className="font-heading font-semibold text-lg mb-4">Products</h4>
+            <ul className="flex flex-col gap-2 mb-6">
+              <li>
+                <Link href="/products/fire-equipment" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Fire Fighting Equipment
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/safety-equipment" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Safety Equipment
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/housekeeping-sanitary-solutions" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Housekeeping & Sanitary
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/stationery-solutions" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Stationery Solutions
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/electrical-materials" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Electrical Materials
+                </Link>
+              </li>
+            </ul>
+
+            <h4 className="font-heading font-semibold text-base mb-2">Services</h4>
+            <ul className="flex flex-col gap-2">
               <li>
                 <Link href="/services/construction-works" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
-                  Construction & Interior Works
+                  Construction Works
                 </Link>
               </li>
               <li>
-                <Link href="/services/fire-safety-equipment" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
-                  Fire & Safety Equipment
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/cleaning-supplies" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
-                  Cleaning & Housekeeping Supplies
+                <Link href="/services/interior-works" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Interior Works
                 </Link>
               </li>
             </ul>
@@ -73,7 +97,9 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[var(--color-brand-gold)] shrink-0 mt-0.5" />
                 <span className="text-[var(--color-text-on-dark-muted)] text-sm">
-                  KPHB, Hyderabad,<br />Telangana
+                  Flat No. 47, Venkata Rama Residency,<br />
+                  Road No. 3, Sri Sai Nagar, KPHB,<br />
+                  Hyderabad – 500085
                 </span>
               </li>
               <li className="flex items-center gap-3">

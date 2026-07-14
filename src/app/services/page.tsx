@@ -1,43 +1,30 @@
 import React from "react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard, Card } from "@/components/ui/Card";
-import { getPexelsImage } from "@/lib/pexels";
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title: "Products & Services | Quality Products & Services",
-  description: "Explore our range of Construction Works, Fire & Safety Equipment, and Cleaning Supplies.",
+  title: "Our Services | Quality Products & Services",
+  description: "Explore our expert contracting services: Construction Works and Interior Works executed across AP & Telangana.",
 };
 
-export default async function ServicesHubPage() {
-  const imgConstruction = await getPexelsImage("modern office ceiling construction", "square");
-  const imgFire = await getPexelsImage("fire extinguisher safety", "square");
-  const imgCleaning = await getPexelsImage("commercial cleaning supplies", "square");
-
+export default function ServicesHubPage() {
   const categories = [
     {
-      title: "Construction & Interior Works",
-      description: "Professional contracting for corporate and commercial spaces.",
-      imageUrl: imgConstruction,
+      title: "Construction Works",
+      description: "Professional structural and civil contracting for corporate and commercial spaces.",
+      imageUrl: "/images/construction-works.webp",
       label: "Construction",
       link: "/services/construction-works",
-      bullets: ["False Ceiling Works", "Plumbing Works", "Electrical Works", "Flooring Works", "Painting Works", "Fabrication Works"]
+      bullets: ["False Ceiling Installation", "Plumbing & Sanitation Works", "Electrical & Wiring Works", "Flooring & Tiling Works", "Professional Wall Painting", "Fabrication & Structural Repairs"]
     },
     {
-      title: "Fire Fighting & Safety Equipment",
-      description: "Comprehensive PPE and firefighting systems.",
-      imageUrl: imgFire,
-      label: "Safety",
-      link: "/services/fire-safety-equipment",
-      bullets: ["Fire Fighting Equipment", "PPE & Fall Protection", "Gas Detection Instruments", "Road Safety Products", "Security & Access Systems"]
-    },
-    {
-      title: "Cleaning & Housekeeping Supplies",
-      description: "Bulk supplies for facility management.",
-      imageUrl: imgCleaning,
-      label: "Cleaning",
-      link: "/services/cleaning-supplies",
-      bullets: ["Cleaning Chemicals", "Tissue & Paper Products", "Mops, Brooms & Brushes", "Garbage Bags & Bins", "Trolleys & Carts"]
+      title: "Interior Works",
+      description: "Premium woodwork, wardrobes, space planning, and modular designs.",
+      imageUrl: "/images/interior-works.webp",
+      label: "Interiors",
+      link: "/services/interior-works",
+      bullets: ["Living Room Interiors", "Bedroom Designs & Woodwork", "Modular Kitchen Solutions", "Office Workspace Planning", "Decorative False Ceiling Solutions", "Wardrobes & Modular Storage"]
     }
   ];
 
@@ -45,12 +32,12 @@ export default async function ServicesHubPage() {
     <div className="py-20 bg-[var(--color-surface-white)]">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <SectionHeading 
-          title="Our Products & Services" 
-          subtitle="Discover our three core verticals, bringing you complete facility solutions under one roof."
+          title="Our Services" 
+          subtitle="Discover our two core contracting and design verticals, executed across Andhra Pradesh and Telangana."
           className="mb-16"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {categories.map((cat, i) => (
             <div key={i} className="flex flex-col gap-6">
               <a href={cat.link} className="block focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-[var(--radius-lg)]">

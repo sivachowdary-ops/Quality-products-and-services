@@ -3,55 +3,55 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { getPexelsImage } from "@/lib/pexels";
-import { Shield } from "lucide-react";
+import { FlameKindling } from "lucide-react";
+import Image from "next/image";
 
 export const metadata = {
-  title: "Fire Fighting & Safety Equipment | Quality Products & Services",
-  description: "Premium safety gear, firefighting equipment, and road safety products for complete protection in Hyderabad.",
+  title: "Fire Fighting Equipment | Quality Products & Services",
+  description: "Fire extinguishers, hose reels, hydrant valves, fire blankets, smoke detectors, sprinklers and suppression systems in India.",
 };
 
-export default async function FireSafetyEquipmentPage() {
-  const bgHero = await getPexelsImage("firefighter safety emergency", "landscape");
-
+export default async function FireEquipmentPage() {
   const subCategories = await Promise.all([
-    getPexelsImage("fire extinguisher safety", "square"),
-    getPexelsImage("safety helmet construction", "square"),
-    getPexelsImage("safety boots industrial", "square"),
-    getPexelsImage("road safety cones", "square"),
-    getPexelsImage("first aid medical", "square"),
-    getPexelsImage("gas detector monitor", "square"),
+    getPexelsImage("red fire extinguisher closeup", "square"),
+    getPexelsImage("fire hose reel", "square"),
+    getPexelsImage("fire blanket safety", "square"),
+    getPexelsImage("smoke detector ceiling", "square"),
+    getPexelsImage("fire sprinkler system", "square"),
+    getPexelsImage("fire suppression system", "square"),
   ]).then((images) => [
-    { title: "Fire Fighting Equipment", img: images[0], desc: "Extinguishers, hydrants, hoses, and suppression systems." },
-    { title: "Head, Eye & Body Protection", img: images[1], desc: "Helmets, goggles, gloves, and protective clothing." },
-    { title: "Foot Protection", img: images[2], desc: "Industrial-grade safety shoes and gumboots." },
-    { title: "Road Safety Products", img: images[3], desc: "Cones, barricades, mirrors, and solar traffic lighting." },
-    { title: "First Aid Stations", img: images[4], desc: "Complete medical kits and eye wash stations." },
-    { title: "Gas Detection Instruments", img: images[5], desc: "Portable monitors and fixed detection systems." },
+    { title: "Fire Extinguishers", img: images[0], desc: "ABC, CO2, foam, and DCP extinguishers for all fire classes." },
+    { title: "Hose Reels & Hydrant Systems", img: images[1], desc: "Complete hose reel drums, hydrant valves, and landing valves." },
+    { title: "Fire Blankets", img: images[2], desc: "Fire-resistant blankets for kitchen and industrial use." },
+    { title: "Smoke Detectors & Alarms", img: images[3], desc: "Optical, ionization, and multi-sensor detection systems." },
+    { title: "Sprinkler Systems", img: images[4], desc: "Wet, dry, and pre-action sprinkler installations." },
+    { title: "Fire Suppression Systems", img: images[5], desc: "FM200, Novec, and clean agent suppression for server rooms." },
   ]);
 
   return (
     <div>
       {/* Category Hero */}
       <section className="relative bg-[var(--color-brand-navy)] py-20 overflow-hidden flex items-center min-h-[40vh]">
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{ 
-            backgroundImage: `url(${bgHero})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-        <div className="absolute inset-0 bg-[var(--color-brand-navy)] opacity-60" />
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/images/fire-equipment.webp" 
+            alt="Fire Fighting Equipment Background" 
+            fill 
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-[var(--color-brand-navy)] opacity-60 z-5" />
         
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full text-center flex flex-col items-center">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-[var(--color-brand-red)] rounded-full mb-6 text-white shadow-md">
-            <Shield className="w-8 h-8" />
+            <FlameKindling className="w-8 h-8" />
           </div>
           <h1 className="text-[var(--color-text-on-dark)] text-4xl md:text-5xl font-bold font-heading mb-4">
-            Fire Fighting & Safety Equipment
+            Fire Fighting Equipment
           </h1>
           <p className="text-[var(--color-text-on-dark-muted)] text-lg max-w-2xl mx-auto">
-            Comprehensive protection for your workforce and premises.
+            Reliable, certified firefighting gear and suppression systems for total premises safety.
           </p>
         </div>
       </section>
@@ -61,10 +61,10 @@ export default async function FireSafetyEquipmentPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-bold text-[var(--color-text-on-light)] mb-1">Corporate & Bulk Orders</h3>
-            <p className="text-[var(--color-text-on-light-muted)]">We supply large quantities with special B2B pricing.</p>
+            <p className="text-[var(--color-text-on-light-muted)]">We supply large quantities with special B2B pricing across India.</p>
           </div>
           <Button className="bg-[var(--color-brand-red)] text-white hover:bg-[#A30D25] focus:ring-[var(--color-brand-red)]" asChild>
-            <a href="https://wa.me/919993454442?text=Hi%2C%20I%20have%20a%20requirement%20for%20Fire%20Fighting%20%2F%20Safety%20Equipment.%20Please%20share%20details.">
+            <a href="https://wa.me/919993454442?text=Hi%2C%20I%20have%20a%20requirement%20for%20Fire%20Fighting%20Equipment.%20Please%20share%20details.">
               Enquire for Bulk Order
             </a>
           </Button>
@@ -94,7 +94,6 @@ export default async function FireSafetyEquipmentPage() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }
