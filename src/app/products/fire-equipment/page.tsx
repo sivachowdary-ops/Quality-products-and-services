@@ -1,8 +1,6 @@
 import React from "react";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import { getPexelsImage } from "@/lib/pexels";
 import { FlameKindling } from "lucide-react";
 import Image from "next/image";
 
@@ -11,22 +9,15 @@ export const metadata = {
   description: "Fire extinguishers, hose reels, hydrant valves, fire blankets, smoke detectors, sprinklers and suppression systems in India.",
 };
 
-export default async function FireEquipmentPage() {
-  const subCategories = await Promise.all([
-    getPexelsImage("red fire extinguisher, studio shot, white background", "square"),
-    getPexelsImage("fire hose reel hydrant, clean background", "square"),
-    getPexelsImage("fire blanket safety, white background", "square"),
-    getPexelsImage("smoke detector ceiling, white background", "square"),
-    getPexelsImage("fire sprinkler system ceiling, clean background", "square"),
-    getPexelsImage("fire suppression system gas tank, clean background", "square"),
-  ]).then((images) => [
-    { title: "Fire Extinguishers", img: images[0], desc: "ABC, CO2, foam, and DCP extinguishers for all fire classes." },
-    { title: "Hose Reels & Hydrant Systems", img: images[1], desc: "Complete hose reel drums, hydrant valves, and landing valves." },
-    { title: "Fire Blankets", img: images[2], desc: "Fire-resistant blankets for kitchen and industrial use." },
-    { title: "Smoke Detectors & Alarms", img: images[3], desc: "Optical, ionization, and multi-sensor detection systems." },
-    { title: "Sprinkler Systems", img: images[4], desc: "Wet, dry, and pre-action sprinkler installations." },
-    { title: "Fire Suppression Systems", img: images[5], desc: "FM200, Novec, and clean agent suppression for server rooms." },
-  ]);
+export default function FireEquipmentPage() {
+  const subCategories = [
+    { title: "Fire Extinguishers", img: "/images/subcategories/fire-extinguisher.webp", desc: "ABC, CO2, foam, and DCP extinguishers for all fire classes." },
+    { title: "Hose Reels & Hydrant Systems", img: "/images/subcategories/hose-reels.webp", desc: "Complete hose reel drums, hydrant valves, and landing valves." },
+    { title: "Fire Blankets", img: "/images/subcategories/fire-blanket.webp", desc: "Fire-resistant blankets for kitchen and industrial use." },
+    { title: "Smoke Detectors & Alarms", img: "/images/subcategories/smoke-detector.webp", desc: "Optical, ionization, and multi-sensor detection systems." },
+    { title: "Sprinkler Systems", img: "/images/subcategories/sprinkler-system.webp", desc: "Wet, dry, and pre-action sprinkler installations." },
+    { title: "Fire Suppression Systems", img: "/images/subcategories/fire-suppression.webp", desc: "FM200, Novec, and clean agent suppression for server rooms." },
+  ];
 
   return (
     <div>

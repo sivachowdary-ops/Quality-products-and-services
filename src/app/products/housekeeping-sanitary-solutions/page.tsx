@@ -12,25 +12,22 @@ export const metadata = {
 };
 
 export default async function HousekeepingSanitarySolutionsPage() {
-  const subCategories = await Promise.all([
-    getPexelsImage("janitorial cleaning chemicals bottles", "square"),
-    getPexelsImage("soap hand sanitizer dispenser", "square"),
+  const dynamicImages = await Promise.all([
     getPexelsImage("paper hand towel rolls", "square"),
-    getPexelsImage("industrial floor mop bucket", "square"),
-    getPexelsImage("microfiber cleaning cloths stack", "square"),
-    getPexelsImage("waste sorting recycling bins", "square"),
     getPexelsImage("entrance floor mat commercial", "square"),
     getPexelsImage("janitorial cleaning trolley cart", "square"),
-  ]).then((images) => [
-    { title: "Cleaning Chemicals", img: images[0], desc: "Industrial strength floor, glass, and surface cleaners." },
-    { title: "Dispensers", img: images[1], desc: "Automatic and manual soap, sanitizer, and tissue dispensers." },
-    { title: "Tissue & Paper Products", img: images[2], desc: "Hand towels, toilet rolls, and facial tissues." },
-    { title: "Mops, Brooms & Brushes", img: images[3], desc: "Heavy-duty floor cleaning tools and accessories." },
-    { title: "Cloths, Wipes & Pads", img: images[4], desc: "Microfiber cloths, sponges, and scrub pads." },
-    { title: "Garbage Bags & Bins", img: images[5], desc: "Waste management bins and bio-hazard bags." },
-    { title: "Mats", img: images[6], desc: "Anti-fatigue, entrance, and logo mats for commercial spaces." },
-    { title: "Trolleys, Buckets & Carts", img: images[7], desc: "Janitorial carts, mop buckets, and multi-purpose trolleys." },
   ]);
+
+  const subCategories = [
+    { title: "Cleaning Chemicals", img: "/images/subcategories/cleaning-chemicals.webp", desc: "Industrial strength floor, glass, and surface cleaners." },
+    { title: "Dispensers", img: "/images/subcategories/soap-dispenser.webp", desc: "Automatic and manual soap, sanitizer, and tissue dispensers." },
+    { title: "Tissue & Paper Products", img: dynamicImages[0], desc: "Hand towels, toilet rolls, and facial tissues." },
+    { title: "Mops, Brooms & Brushes", img: "/images/subcategories/mop-broom.webp", desc: "Heavy-duty floor cleaning tools and accessories." },
+    { title: "Cloths, Wipes & Pads", img: "/images/subcategories/cleaning-cloth.webp", desc: "Microfiber cloths, sponges, and scrub pads." },
+    { title: "Garbage Bags & Bins", img: "/images/subcategories/garbage-bins.webp", desc: "Waste management bins and bio-hazard bags." },
+    { title: "Mats", img: dynamicImages[1], desc: "Anti-fatigue, entrance, and logo mats for commercial spaces." },
+    { title: "Trolleys, Buckets & Carts", img: dynamicImages[2], desc: "Janitorial carts, mop buckets, and multi-purpose trolleys." },
+  ];
 
   return (
     <div>

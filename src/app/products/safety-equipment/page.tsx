@@ -1,8 +1,6 @@
 import React from "react";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import { getPexelsImage } from "@/lib/pexels";
 import { HardHat } from "lucide-react";
 import Image from "next/image";
 
@@ -11,28 +9,15 @@ export const metadata = {
   description: "Head, eye, hand, body and respiratory protection, fall protection, gas detection, road safety products across India.",
 };
 
-export default async function SafetyEquipmentPage() {
-  const subCategories = await Promise.all([
-    getPexelsImage("industrial safety glasses goggles", "square"),
-    getPexelsImage("industrial work gloves protective", "square"),
-    getPexelsImage("gas mask respirator safety", "square"),
-    getPexelsImage("safety harness lanyard construction", "square"),
-    getPexelsImage("portable gas detector sensor", "square"),
-    getPexelsImage("red first aid kit cabinet", "square"),
-    getPexelsImage("orange traffic cones barricade", "square"),
-    getPexelsImage("industrial safety warning signs", "square"),
-    getPexelsImage("steel toe safety work shoes", "square"),
-  ]).then((images) => [
-    { title: "Head & Eye Protection", img: images[0], desc: "Industrial helmets, safety goggles, face shields." },
-    { title: "Hand & Body Protection", img: images[1], desc: "Cut-resistant gloves, coveralls, aprons, protective clothing." },
-    { title: "Respiratory Protection", img: images[2], desc: "Dust masks, half-face and full-face respirators, SCBA." },
-    { title: "Fall Protection", img: images[3], desc: "Full-body harnesses, lanyards, retractable lifelines." },
-    { title: "Gas Detection Instruments", img: images[4], desc: "Portable monitors and fixed detection systems." },
-    { title: "First Aid Stations", img: images[5], desc: "Complete medical kits, eye wash stations, stretchers." },
-    { title: "Road Safety Products", img: images[6], desc: "Cones, barricades, convex mirrors, speed breakers, road studs." },
-    { title: "Safety Signage", img: images[7], desc: "Warning, mandatory, prohibition, and emergency signs." },
-    { title: "Safety Shoes", img: images[8], desc: "Steel-toe, PU sole, anti-static, and ESD safety footwear." },
-  ]);
+export default function SafetyEquipmentPage() {
+  const subCategories = [
+    { title: "Head & Eye Protection", img: "/images/subcategories/safety-helmet.webp", desc: "Industrial helmets, safety goggles, face shields." },
+    { title: "Hand & Body Protection", img: "/images/subcategories/safety-gloves.webp", desc: "Cut-resistant gloves, coveralls, aprons, protective clothing." },
+    { title: "Respiratory Protection", img: "/images/subcategories/respiratory-mask.webp", desc: "Dust masks, half-face and full-face respirators, SCBA." },
+    { title: "Fall Protection", img: "/images/subcategories/safety-harness.webp", desc: "Full-body harnesses, lanyards, retractable lifelines." },
+    { title: "Gas Detection Instruments", img: "/images/subcategories/gas-detector.webp", desc: "Portable monitors and fixed detection systems." },
+    { title: "First Aid Stations", img: "/images/subcategories/first-aid.webp", desc: "Complete medical kits, eye wash stations, stretchers." },
+  ];
 
   return (
     <div>
@@ -57,7 +42,7 @@ export default async function SafetyEquipmentPage() {
             Safety Equipment
           </h1>
           <p className="text-[var(--color-text-on-dark-muted)] text-lg max-w-2xl mx-auto">
-            Comprehensive PPE, fall protection, gas monitors, road safety products, and footwear supplied across India.
+            Comprehensive PPE, fall protection, gas monitors, and industrial first aid stations supplied across India.
           </p>
         </div>
       </section>
