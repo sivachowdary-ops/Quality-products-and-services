@@ -118,20 +118,20 @@ export default async function Home() {
             src="/images/hero.webp" 
             alt="Quality Products and Services Construction Banner" 
             fill 
-            className="object-cover"
+            className="object-cover opacity-35"
             priority
           />
         </div>
         
-        {/* Subtle dark gradient overlay for text readability, no blue */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60 z-5" />
+        {/* Dark gradient overlay for text readability, no blue */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 z-5" />
         
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full py-16 md:py-24">
           <div className="max-w-3xl">
-            <h1 className="text-[var(--color-text-on-dark)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-[1.1]">
+            <h1 className="text-[var(--color-text-on-dark)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-[1.1] drop-shadow-md">
               Complete Solutions Under One Roof
             </h1>
-            <p className="text-[var(--color-text-on-dark-muted)] text-base sm:text-lg md:text-xl mb-8 md:mb-10 max-w-2xl leading-relaxed">
+            <p className="text-[var(--color-text-on-dark-muted)] text-base sm:text-lg md:text-xl mb-8 md:mb-10 max-w-2xl leading-relaxed drop-shadow">
               Your trusted partner for Fire, Safety, Housekeeping, Stationery, and Electrical supplies across India, plus elite Construction & Interior services in AP & Telangana.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -173,7 +173,7 @@ export default async function Home() {
             subtitle="Everything you need to supply your workspaces and project sites, sourced and delivered across India."
             className="mb-8 md:mb-12"
           />
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {products.map((prod, i) => (
               <Link href={prod.link} key={i} className="block focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-[var(--radius-lg)]">
                 <SquareImageCard 
