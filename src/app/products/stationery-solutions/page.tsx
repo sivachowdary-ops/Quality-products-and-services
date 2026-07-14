@@ -1,5 +1,4 @@
 import React from "react";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { getPexelsImage } from "@/lib/pexels";
@@ -12,25 +11,18 @@ export const metadata = {
 };
 
 export default async function StationerySolutionsPage() {
-  const subCategories = await Promise.all([
-    getPexelsImage("executive luxury pens pencils", "square"),
-    getPexelsImage("office stationery notebooks stack", "square"),
-    getPexelsImage("ring binder folders archive", "square"),
-    getPexelsImage("stapler paper punch office", "square"),
-    getPexelsImage("colored pencils markers paint", "square"),
-    getPexelsImage("printer ink cartridge toner", "square"),
-    getPexelsImage("copier paper ream stack", "square"),
-    getPexelsImage("desk storage pen stand organizer", "square"),
-  ]).then((images) => [
-    { title: "Writing Instruments", img: images[0], desc: "Ballpoint, gel, marker pens, and pencil sets." },
-    { title: "Notebooks & Papers", img: images[1], desc: "Spiral, hardbound, and ruled notebooks in all sizes." },
-    { title: "Files & Folders", img: images[2], desc: "Lever arch, ring binders, box files, and document wallets." },
-    { title: "Office Essentials", img: images[3], desc: "Staplers, punches, paper clips, rubber bands, pins." },
-    { title: "Art & Craft Supplies", img: images[4], desc: "Colors, sketch pens, drawing sheets, and craft materials." },
-    { title: "Printers & Ink / Toner", img: images[5], desc: "Compatible and original ink cartridges and toner." },
-    { title: "Copier Paper (A4)", img: images[6], desc: "Premium 75GSM and 80GSM copier paper in bulk." },
-    { title: "Desk Organizers", img: images[7], desc: "Pen stands, magazine racks, and desktop filing trays." },
-  ]);
+  const imgNotebooks = await getPexelsImage("office notebooks paper stack, white background", "square");
+
+  const subCategories = [
+    { title: "Writing Instruments", img: "/images/subcategories/writing-pens.webp", desc: "Ballpoint, gel, marker pens, and pencil sets." },
+    { title: "Notebooks & Papers", img: imgNotebooks, desc: "Spiral, hardbound, and ruled notebooks in all sizes." },
+    { title: "Files & Folders", img: "/images/subcategories/files-folders.webp", desc: "Lever arch, ring binders, box files, and document wallets." },
+    { title: "Office Essentials", img: "/images/subcategories/office-essentials.webp", desc: "Staplers, punches, paper clips, rubber bands, pins." },
+    { title: "Art & Craft Supplies", img: "/images/subcategories/art-supplies.webp", desc: "Colors, sketch pens, drawing sheets, and craft materials." },
+    { title: "Printers & Ink / Toner", img: "/images/subcategories/printer-toner.webp", desc: "Compatible and original ink cartridges and toner." },
+    { title: "Copier Paper (A4)", img: "/images/subcategories/copier-paper.webp", desc: "Premium 75GSM and 80GSM copier paper in bulk." },
+    { title: "Desk Organizers", img: "/images/subcategories/desk-organizers.webp", desc: "Pen stands, magazine racks, and desktop filing trays." },
+  ];
 
   return (
     <div>

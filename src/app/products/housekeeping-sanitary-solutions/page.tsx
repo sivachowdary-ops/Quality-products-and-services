@@ -12,21 +12,17 @@ export const metadata = {
 };
 
 export default async function HousekeepingSanitarySolutionsPage() {
-  const dynamicImages = await Promise.all([
-    getPexelsImage("paper hand towel rolls", "square"),
-    getPexelsImage("entrance floor mat commercial", "square"),
-    getPexelsImage("janitorial cleaning trolley cart", "square"),
-  ]);
+  const imgTissue = await getPexelsImage("paper hand towel rolls, studio shot, white background", "square");
 
   const subCategories = [
     { title: "Cleaning Chemicals", img: "/images/subcategories/cleaning-chemicals.webp", desc: "Industrial strength floor, glass, and surface cleaners." },
     { title: "Dispensers", img: "/images/subcategories/soap-dispenser.webp", desc: "Automatic and manual soap, sanitizer, and tissue dispensers." },
-    { title: "Tissue & Paper Products", img: dynamicImages[0], desc: "Hand towels, toilet rolls, and facial tissues." },
+    { title: "Tissue & Paper Products", img: imgTissue, desc: "Hand towels, toilet rolls, and facial tissues." },
     { title: "Mops, Brooms & Brushes", img: "/images/subcategories/mop-broom.webp", desc: "Heavy-duty floor cleaning tools and accessories." },
     { title: "Cloths, Wipes & Pads", img: "/images/subcategories/cleaning-cloth.webp", desc: "Microfiber cloths, sponges, and scrub pads." },
     { title: "Garbage Bags & Bins", img: "/images/subcategories/garbage-bins.webp", desc: "Waste management bins and bio-hazard bags." },
-    { title: "Mats", img: dynamicImages[1], desc: "Anti-fatigue, entrance, and logo mats for commercial spaces." },
-    { title: "Trolleys, Buckets & Carts", img: dynamicImages[2], desc: "Janitorial carts, mop buckets, and multi-purpose trolleys." },
+    { title: "Mats", img: "/images/subcategories/floor-mats.webp", desc: "Anti-fatigue, entrance, and logo mats for commercial spaces." },
+    { title: "Trolleys, Buckets & Carts", img: "/images/subcategories/cleaning-trolley.webp", desc: "Janitorial carts, mop buckets, and multi-purpose trolleys." },
   ];
 
   return (

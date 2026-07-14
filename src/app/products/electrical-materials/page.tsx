@@ -1,5 +1,4 @@
 import React from "react";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { getPexelsImage } from "@/lib/pexels";
@@ -13,23 +12,17 @@ export const metadata = {
 };
 
 export default async function ElectricalMaterialsPage() {
-  const subCategories = await Promise.all([
-    getPexelsImage("electrical copper wire spool", "square"),
-    getPexelsImage("electrical circuit breaker board", "square"),
-    getPexelsImage("modern wall switch socket", "square"),
-    getPexelsImage("office led panel light panel", "square"),
-    getPexelsImage("pvc conduit pipes fittings", "square"),
-    getPexelsImage("ceiling fan exhaust fan", "square"),
-    getPexelsImage("industrial power plug receptacle", "square"),
-  ]).then((images) => [
-    { title: "Wires & Cables", img: images[0], desc: "Flexible wires, house wires, power and control cables." },
-    { title: "MCB & DB Boxes", img: images[1], desc: "MCBs, RCCBs, isolators, enclosures, and accessories." },
-    { title: "Switches & Sockets", img: images[2], desc: "Modular switches, sockets, plates, dimmers, switchboards." },
-    { title: "Lighting Solutions", img: images[3], desc: "LED bulbs, tube lights, panel lights, floodlights." },
-    { title: "Conduits & Fittings", img: images[4], desc: "PVC/GI conduits, connectors, and junction boxes." },
-    { title: "Fans & Ventilation", img: images[5], desc: "Ceiling fans, exhaust fans, and ventilation accessories." },
-    { title: "Industrial Plugs & Sockets", img: images[6], desc: "Industrial connectors, sockets, plugs, extensions." },
-  ]);
+  const imgMcb = await getPexelsImage("electrical circuit breaker switch, white background", "square");
+
+  const subCategories = [
+    { title: "Wires & Cables", img: "/images/subcategories/wires-cables.webp", desc: "Flexible wires, house wires, power and control cables." },
+    { title: "MCB & DB Boxes", img: imgMcb, desc: "MCBs, RCCBs, isolators, enclosures, and accessories." },
+    { title: "Switches & Sockets", img: "/images/subcategories/switches-sockets.webp", desc: "Modular switches, sockets, plates, dimmers, switchboards." },
+    { title: "Lighting Solutions", img: "/images/subcategories/lighting-fixtures.webp", desc: "LED bulbs, tube lights, panel lights, floodlights." },
+    { title: "Conduits & Fittings", img: "/images/subcategories/conduit-pipes.webp", desc: "PVC/GI conduits, connectors, and junction boxes." },
+    { title: "Fans & Ventilation", img: "/images/subcategories/ventilation-fans.webp", desc: "Ceiling fans, exhaust fans, and ventilation accessories." },
+    { title: "Industrial Plugs & Sockets", img: "/images/subcategories/industrial-plugs.webp", desc: "Industrial connectors, sockets, plugs, extensions." },
+  ];
 
   return (
     <div>
