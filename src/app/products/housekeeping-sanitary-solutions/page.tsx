@@ -13,14 +13,14 @@ export const metadata = {
 
 export default async function HousekeepingSanitarySolutionsPage() {
   const subCategories = await Promise.all([
-    getPexelsImage("cleaning chemicals bottles", "square"),
-    getPexelsImage("hand sanitizer dispenser", "square"),
-    getPexelsImage("tissue paper rolls", "square"),
-    getPexelsImage("mop bucket cleaning", "square"),
-    getPexelsImage("microfiber cleaning cloth", "square"),
-    getPexelsImage("garbage bins sorting", "square"),
-    getPexelsImage("entrance floor mat", "square"),
-    getPexelsImage("cleaning trolley cart", "square"),
+    getPexelsImage("janitorial cleaning chemicals bottles", "square"),
+    getPexelsImage("soap hand sanitizer dispenser", "square"),
+    getPexelsImage("paper hand towel rolls", "square"),
+    getPexelsImage("industrial floor mop bucket", "square"),
+    getPexelsImage("microfiber cleaning cloths stack", "square"),
+    getPexelsImage("waste sorting recycling bins", "square"),
+    getPexelsImage("entrance floor mat commercial", "square"),
+    getPexelsImage("janitorial cleaning trolley cart", "square"),
   ]).then((images) => [
     { title: "Cleaning Chemicals", img: images[0], desc: "Industrial strength floor, glass, and surface cleaners." },
     { title: "Dispensers", img: images[1], desc: "Automatic and manual soap, sanitizer, and tissue dispensers." },

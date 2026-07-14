@@ -58,7 +58,7 @@ export const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-[var(--color-brand-navy)] shadow-md",
+        "sticky top-0 z-40 transition-all duration-300 bg-[var(--color-brand-navy)] shadow-md",
         scrolled ? "py-2" : "py-3"
       )}
     >

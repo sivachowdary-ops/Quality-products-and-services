@@ -67,7 +67,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.variable} ${poppins.variable} antialiased flex flex-col min-h-screen pt-[72px]`}>
+      <body className={`${inter.variable} ${poppins.variable} antialiased flex flex-col min-h-screen`}>
         <Navbar />
         <main className="flex-grow">
           {children}

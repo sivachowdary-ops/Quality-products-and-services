@@ -14,12 +14,12 @@ export const metadata = {
 
 export default async function InteriorWorksPage() {
   const subCategories = await Promise.all([
-    getPexelsImage("modern living room interior", "square"),
-    getPexelsImage("modern bedroom interior", "square"),
-    getPexelsImage("modular kitchen modern", "square"),
-    getPexelsImage("modern office interior", "square"),
-    getPexelsImage("designer false ceiling", "square"),
-    getPexelsImage("modern wardrobe design", "square"),
+    getPexelsImage("modern living room couch design", "square"),
+    getPexelsImage("luxury master bedroom setup", "square"),
+    getPexelsImage("modular kitchen cabinets quartz", "square"),
+    getPexelsImage("corporate office partition workspace", "square"),
+    getPexelsImage("designer false ceiling spotlight", "square"),
+    getPexelsImage("custom wardrobe closet organizer", "square"),
   ]).then((images) => [
     { title: "Living Room Interiors", img: images[0], desc: "Contemporary living spaces with premium woodwork and custom finishes." },
     { title: "Bedroom Interiors", img: images[1], desc: "Elegant bedroom designs, custom headboards, and bedside units." },

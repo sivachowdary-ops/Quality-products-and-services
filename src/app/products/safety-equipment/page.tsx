@@ -13,15 +13,15 @@ export const metadata = {
 
 export default async function SafetyEquipmentPage() {
   const subCategories = await Promise.all([
-    getPexelsImage("safety helmet goggles", "square"),
-    getPexelsImage("safety gloves industrial", "square"),
-    getPexelsImage("respiratory mask safety", "square"),
-    getPexelsImage("safety harness fall protection", "square"),
-    getPexelsImage("gas detector monitor", "square"),
-    getPexelsImage("first aid kit box", "square"),
-    getPexelsImage("road safety cones barricades", "square"),
-    getPexelsImage("safety signs workplace", "square"),
-    getPexelsImage("safety boots industrial", "square"),
+    getPexelsImage("industrial safety glasses goggles", "square"),
+    getPexelsImage("industrial work gloves protective", "square"),
+    getPexelsImage("gas mask respirator safety", "square"),
+    getPexelsImage("safety harness lanyard construction", "square"),
+    getPexelsImage("portable gas detector sensor", "square"),
+    getPexelsImage("red first aid kit cabinet", "square"),
+    getPexelsImage("orange traffic cones barricade", "square"),
+    getPexelsImage("industrial safety warning signs", "square"),
+    getPexelsImage("steel toe safety work shoes", "square"),
   ]).then((images) => [
     { title: "Head & Eye Protection", img: images[0], desc: "Industrial helmets, safety goggles, face shields." },
     { title: "Hand & Body Protection", img: images[1], desc: "Cut-resistant gloves, coveralls, aprons, protective clothing." },

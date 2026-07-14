@@ -14,13 +14,13 @@ export const metadata = {
 
 export default async function ElectricalMaterialsPage() {
   const subCategories = await Promise.all([
-    getPexelsImage("electrical wires cables", "square"),
-    getPexelsImage("mcb circuit breaker", "square"),
-    getPexelsImage("modular switch socket", "square"),
-    getPexelsImage("led bulb tube light", "square"),
-    getPexelsImage("pvc conduit fittings", "square"),
-    getPexelsImage("ceiling fan modern", "square"),
-    getPexelsImage("industrial plug socket", "square"),
+    getPexelsImage("electrical copper wire spool", "square"),
+    getPexelsImage("electrical circuit breaker board", "square"),
+    getPexelsImage("modern wall switch socket", "square"),
+    getPexelsImage("office led panel light panel", "square"),
+    getPexelsImage("pvc conduit pipes fittings", "square"),
+    getPexelsImage("ceiling fan exhaust fan", "square"),
+    getPexelsImage("industrial power plug receptacle", "square"),
   ]).then((images) => [
     { title: "Wires & Cables", img: images[0], desc: "Flexible wires, house wires, power and control cables." },
     { title: "MCB & DB Boxes", img: images[1], desc: "MCBs, RCCBs, isolators, enclosures, and accessories." },

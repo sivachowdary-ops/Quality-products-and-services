@@ -2,69 +2,44 @@ import React from "react";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card, SquareImageCard } from "@/components/ui/Card";
-import { getPexelsImage } from "@/lib/pexels";
 import { ShieldCheck, Clock, Tag, Users, Sparkles, ArrowRight } from "lucide-react";
 import { HorizontalScroll } from "@/components/ui/HorizontalScroll";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Home() {
-  const [
-    imgExplore1,
-    imgExplore2,
-    imgExplore3,
-    imgExplore4,
-    imgExplore5,
-    imgExplore6,
-    imgExplore7,
-    imgExplore8,
-    imgExplore9,
-    imgExplore10,
-  ] = await Promise.all([
-    getPexelsImage("red fire extinguisher closeup", "square"),
-    getPexelsImage("safety helmet goggles", "square"),
-    getPexelsImage("commercial cleaning chemicals", "square"),
-    getPexelsImage("office notebooks pens", "square"),
-    getPexelsImage("electrical cable switch", "square"),
-    getPexelsImage("modern office ceiling construction", "square"),
-    getPexelsImage("modular kitchen layout", "square"),
-    getPexelsImage("first aid medical box", "square"),
-    getPexelsImage("road barricade safety cone", "square"),
-    getPexelsImage("modern living room interior", "square"),
-  ]);
-
+export default function Home() {
   const products = [
     {
       title: "Fire Fighting Equipment",
-      description: "Extinguishers, hydrants, hoses, smoke detectors, and suppression systems.",
+      description: "Extinguishers, hydrants, hoses, smoke detectors, and suppression systems. Click to view fire fighting equipment →",
       imageUrl: "/images/fire-equipment.webp",
       label: "Products",
       link: "/products/fire-equipment"
     },
     {
       title: "Safety Equipment",
-      description: "PPE, fall protection, gas detection, road safety items, ESD shoes, and safety signage.",
+      description: "PPE, fall protection, gas detection, road safety items, ESD shoes, and safety signage. Click to view safety equipment →",
       imageUrl: "/images/safety-equipment.webp",
       label: "Products",
       link: "/products/safety-equipment"
     },
     {
       title: "Housekeeping & Sanitary Solutions",
-      description: "Cleaning chemicals, paper tissues, automatic dispensers, and waste bins.",
+      description: "Cleaning chemicals, paper tissues, automatic dispensers, and waste bins. Click to view housekeeping & sanitary solutions →",
       imageUrl: "/images/housekeeping-sanitary.webp",
       label: "Products",
       link: "/products/housekeeping-sanitary-solutions"
     },
     {
       title: "Stationery Solutions",
-      description: "Office writing instruments, notebook supplies, folders, calculators, whiteboards, and copier papers.",
+      description: "Office writing instruments, notebook supplies, folders, calculators, whiteboards, and copier papers. Click to view stationery solutions →",
       imageUrl: "/images/stationery-solutions.webp",
       label: "Products",
       link: "/products/stationery-solutions"
     },
     {
       title: "Electrical Materials",
-      description: "Flexible wires, power cables, modular switches, DB boxes, PVC conduits, and LED bulbs.",
+      description: "Flexible wires, power cables, modular switches, DB boxes, PVC conduits, and LED bulbs. Click to view electrical materials →",
       imageUrl: "/images/electrical-materials.webp",
       label: "Products",
       link: "/products/electrical-materials"
@@ -74,14 +49,14 @@ export default async function Home() {
   const services = [
     {
       title: "Construction Works",
-      description: "Comprehensive false ceiling, plumbing, electrical installation, flooring, painting, and civil contracting.",
+      description: "Comprehensive false ceiling, plumbing, electrical installation, flooring, painting, and civil contracting. Click to view construction works →",
       imageUrl: "/images/construction-works.webp",
       label: "Services",
       link: "/services/construction-works"
     },
     {
       title: "Interior Works",
-      description: "Custom wardrobes, modern modular kitchen layouts, living rooms, and corporate workspace designs.",
+      description: "Custom wardrobes, modern modular kitchen layouts, living rooms, and office designs. Click to view interior works →",
       imageUrl: "/images/interior-works.webp",
       label: "Services",
       link: "/services/interior-works"
@@ -97,16 +72,16 @@ export default async function Home() {
   ];
 
   const exploreRange = [
-    { title: "Fire Extinguishers", img: imgExplore1, cat: "Fire Safety" },
-    { title: "Workplace Helmets", img: imgExplore2, cat: "Safety" },
-    { title: "Floor Cleaners", img: imgExplore3, cat: "Hygiene" },
-    { title: "Writing Essentials", img: imgExplore4, cat: "Stationery" },
-    { title: "Modular Switches", img: imgExplore5, cat: "Electrical" },
-    { title: "False Ceiling Installation", img: imgExplore6, cat: "Construction" },
-    { title: "Modular Kitchen Fitting", img: imgExplore7, cat: "Interiors" },
-    { title: "First Aid Kits", img: imgExplore8, cat: "Safety" },
-    { title: "Traffic Barricades", img: imgExplore9, cat: "Road Safety" },
-    { title: "Living Room Millwork", img: imgExplore10, cat: "Interiors" },
+    { title: "Fire Extinguishers", img: "/images/fire-equipment.webp", cat: "Fire Safety" },
+    { title: "Plumbing Materials", img: "/images/explore/plumbing.webp", cat: "Construction" },
+    { title: "Workplace Helmets", img: "/images/explore/helmet.webp", cat: "Safety" },
+    { title: "Floor Cleaners", img: "/images/explore/cleaner.webp", cat: "Hygiene" },
+    { title: "Writing Essentials", img: "/images/explore/stationery.webp", cat: "Stationery" },
+    { title: "Modular Switches", img: "/images/explore/switches.webp", cat: "Electrical" },
+    { title: "False Ceiling Installation", img: "/images/explore/ceiling.webp", cat: "Construction" },
+    { title: "Modular Kitchen Fitting", img: "/images/interior-works.webp", cat: "Interiors" },
+    { title: "First Aid Kits", img: "/images/explore/firstaid.webp", cat: "Safety" },
+    { title: "Traffic Barricades", img: "/images/explore/barricade.webp", cat: "Road Safety" },
   ];
 
   return (
@@ -124,7 +99,7 @@ export default async function Home() {
         </div>
         
         {/* Dark gradient overlay for text readability, no blue */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 z-5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/85 z-5" />
         
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full py-16 md:py-24">
           <div className="max-w-3xl">
@@ -195,7 +170,7 @@ export default async function Home() {
                 </div>
                 <h4 className="text-xl font-bold font-heading mb-2">View All Products</h4>
                 <p className="text-[var(--color-text-on-dark-muted)] text-sm max-w-[200px]">
-                  Browse our complete product catalog and individual subcategories.
+                  Click to view full products catalog.
                 </p>
               </Card>
             </Link>

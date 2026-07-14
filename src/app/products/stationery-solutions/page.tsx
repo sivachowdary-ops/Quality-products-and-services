@@ -13,14 +13,14 @@ export const metadata = {
 
 export default async function StationerySolutionsPage() {
   const subCategories = await Promise.all([
-    getPexelsImage("pens pencils office", "square"),
-    getPexelsImage("notebooks stack office", "square"),
-    getPexelsImage("office files folders", "square"),
-    getPexelsImage("stapler tape dispenser office", "square"),
-    getPexelsImage("art supplies craft", "square"),
-    getPexelsImage("printer ink cartridge", "square"),
-    getPexelsImage("a4 paper stack copier", "square"),
-    getPexelsImage("desk organizer office", "square"),
+    getPexelsImage("executive luxury pens pencils", "square"),
+    getPexelsImage("office stationery notebooks stack", "square"),
+    getPexelsImage("ring binder folders archive", "square"),
+    getPexelsImage("stapler paper punch office", "square"),
+    getPexelsImage("colored pencils markers paint", "square"),
+    getPexelsImage("printer ink cartridge toner", "square"),
+    getPexelsImage("copier paper ream stack", "square"),
+    getPexelsImage("desk storage pen stand organizer", "square"),
   ]).then((images) => [
     { title: "Writing Instruments", img: images[0], desc: "Ballpoint, gel, marker pens, and pencil sets." },
     { title: "Notebooks & Papers", img: images[1], desc: "Spiral, hardbound, and ruled notebooks in all sizes." },
