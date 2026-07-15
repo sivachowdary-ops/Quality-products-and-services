@@ -1,7 +1,6 @@
 import React from "react";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import { getPexelsImage } from "@/lib/pexels";
 import { NotebookPen } from "lucide-react";
 import Image from "next/image";
 
@@ -10,29 +9,20 @@ export const metadata = {
   description: "Office stationery, writing instruments, notebooks, files, sticky notes, envelopes, calculators, stamp & ink, tapes, and presentation boards supplied across India.",
 };
 
-export default async function StationerySolutionsPage() {
-  const dynamicImages = await Promise.all([
-    getPexelsImage("sticky notes memo pads, white background", "square"),
-    getPexelsImage("brown envelopes stack document pocket, white background", "square"),
-    getPexelsImage("desktop electronic calculator, white background", "square"),
-    getPexelsImage("self inking stamp pad ink, white background", "square"),
-    getPexelsImage("packaging tape glue stick, white background", "square"),
-    getPexelsImage("whiteboard easel stand, clean background", "square"),
-  ]);
-
+export default function StationerySolutionsPage() {
   const subCategories = [
     { title: "Writing Instruments", img: "/images/subcategories/writing-pens.webp", desc: "Ballpoint pens, gel pens, marker pens, and highlighters." },
     { title: "Notebooks & Papers", img: "/images/subcategories/notebooks.webp", desc: "Spiral notebooks, register registers, writing pads, and notebook stacks." },
     { title: "Files & Folders", img: "/images/subcategories/files-folders.webp", desc: "Lever arch files, ring binders, display folders, and document envelopes." },
     { title: "Office Essentials", img: "/images/subcategories/office-essentials.webp", desc: "Staplers, hole punchers, paper clips, and basic desk essentials." },
-    { title: "Sticky Notes & Memo Pads", img: dynamicImages[0], desc: "Colorful post-it notes, page flags, and memo blocks." },
-    { title: "Envelopes & Documents", img: dynamicImages[1], desc: "Kraft paper envelopes, white courier envelopes, and document pocket files." },
+    { title: "Sticky Notes & Memo Pads", img: "/images/subcategories/sticky-notes.webp", desc: "Colorful post-it notes, page flags, and memo blocks." },
+    { title: "Envelopes & Documents", img: "/images/subcategories/envelopes.webp", desc: "Kraft paper envelopes, white courier envelopes, and document pocket files." },
     { title: "Art & Craft Supplies", img: "/images/subcategories/art-supplies.webp", desc: "Colors, sketch pens, craft scissors, and drawing sheets." },
-    { title: "Calculators", img: dynamicImages[2], desc: "12-digit desktop electronic calculators and scientific calculators." },
+    { title: "Calculators", img: "/images/subcategories/calculators.webp", desc: "12-digit desktop electronic calculators and scientific calculators." },
     { title: "Desk Organizers", img: "/images/subcategories/desk-organizers.webp", desc: "Mesh metal pen stands, desktop document sorting trays, and organizers." },
-    { title: "Stamp & Ink", img: dynamicImages[3], desc: "Self-inking stamps, dater stamps, stamp pads, and refill ink bottles." },
-    { title: "Tapes & Adhesives", img: dynamicImages[4], desc: "Heavy-duty packaging tapes, glue sticks, glue bottles, and masking tape." },
-    { title: "Presentation & Board", img: dynamicImages[5], desc: "Non-magnetic and magnetic whiteboards, easel flipcharts, and markers." },
+    { title: "Stamp & Ink", img: "/images/subcategories/stamp-ink.webp", desc: "Self-inking stamps, dater stamps, stamp pads, and refill ink bottles." },
+    { title: "Tapes & Adhesives", img: "/images/subcategories/tapes.webp", desc: "Heavy-duty packaging tapes, glue sticks, glue bottles, and masking tape." },
+    { title: "Presentation & Board", img: "/images/subcategories/presentation-board.webp", desc: "Non-magnetic and magnetic whiteboards, easel flipcharts, and markers." },
   ];
 
   return (

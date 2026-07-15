@@ -1,7 +1,6 @@
 import React from "react";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import { getPexelsImage } from "@/lib/pexels";
 import { Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,12 +10,10 @@ export const metadata = {
   description: "Wires, cables, MCBs, switches, sockets, LED lighting, conduits, fans, and industrial plugs supplied across India.",
 };
 
-export default async function ElectricalMaterialsPage() {
-  const imgMcb = await getPexelsImage("electrical circuit breaker switch, white background", "square");
-
+export default function ElectricalMaterialsPage() {
   const subCategories = [
     { title: "Wires & Cables", img: "/images/subcategories/wires-cables.webp", desc: "Flexible wires, house wires, power and control cables." },
-    { title: "MCB & DB Boxes", img: imgMcb, desc: "MCBs, RCCBs, isolators, enclosures, and accessories." },
+    { title: "MCB & DB Boxes", img: "/images/subcategories/mcb-db.webp", desc: "MCBs, RCCBs, isolators, enclosures, and accessories." },
     { title: "Switches & Sockets", img: "/images/subcategories/switches-sockets.webp", desc: "Modular switches, sockets, plates, dimmers, switchboards." },
     { title: "Lighting Solutions", img: "/images/subcategories/lighting-fixtures.webp", desc: "LED bulbs, tube lights, panel lights, floodlights." },
     { title: "Conduits & Fittings", img: "/images/subcategories/conduit-pipes.webp", desc: "PVC/GI conduits, connectors, and junction boxes." },
