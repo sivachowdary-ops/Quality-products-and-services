@@ -3,7 +3,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { getPexelsImage } from "@/lib/pexels";
 import { PaintBucket } from "lucide-react";
 import Image from "next/image";
 
@@ -12,22 +11,15 @@ export const metadata = {
   description: "Modern living room, bedroom, kitchen, office interiors, false ceiling solutions, and wardrobe design in AP & Telangana.",
 };
 
-export default async function InteriorWorksPage() {
-  const subCategories = await Promise.all([
-    getPexelsImage("modern living room couch design", "square"),
-    getPexelsImage("luxury master bedroom setup", "square"),
-    getPexelsImage("modular kitchen cabinets quartz", "square"),
-    getPexelsImage("corporate office partition workspace", "square"),
-    getPexelsImage("designer false ceiling spotlight", "square"),
-    getPexelsImage("custom wardrobe closet organizer", "square"),
-  ]).then((images) => [
-    { title: "Living Room Interiors", img: images[0], desc: "Contemporary living spaces with premium woodwork and custom finishes." },
-    { title: "Bedroom Interiors", img: images[1], desc: "Elegant bedroom designs, custom headboards, and bedside units." },
-    { title: "Modular Kitchen Solutions", img: images[2], desc: "Space-efficient layouts with high-quality hardware and laminates." },
-    { title: "Office Interiors", img: images[3], desc: "Professional workspace planning, partitions, and workstation setups." },
-    { title: "False Ceiling Solutions", img: images[4], desc: "Aesthetic ceiling designs with integrated ambient lighting layouts." },
-    { title: "Wardrobes & Storage", img: images[5], desc: "Custom sliding/hinged wardrobes, walk-in closets, and loft storage." },
-  ]);
+export default function InteriorWorksPage() {
+  const subCategories = [
+    { title: "Living Room Interiors", img: "/images/subcategories/living-interiors.webp", desc: "Contemporary living spaces with premium woodwork and custom finishes." },
+    { title: "Bedroom Interiors", img: "/images/subcategories/bedroom-interiors.webp", desc: "Elegant bedroom designs, custom headboards, and bedside units." },
+    { title: "Modular Kitchen Solutions", img: "/images/subcategories/modular-kitchen.webp", desc: "Space-efficient layouts with high-quality hardware and laminates." },
+    { title: "Office Interiors", img: "/images/subcategories/office-interiors.webp", desc: "Professional workspace planning, partitions, and workstation setups." },
+    { title: "False Ceiling Solutions", img: "/images/subcategories/interior-ceiling.webp", desc: "Aesthetic ceiling designs with integrated ambient lighting layouts." },
+    { title: "Wardrobes & Storage", img: "/images/subcategories/wardrobes-closet.webp", desc: "Custom sliding/hinged wardrobes, walk-in closets, and loft storage." },
+  ];
 
   const faqs = [
     { question: "Do you offer customized designs?", answer: "Yes, all our interior works are fully customized based on client requirements, space availability, and budget." },

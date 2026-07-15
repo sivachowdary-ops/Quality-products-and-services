@@ -3,7 +3,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { getPexelsImage } from "@/lib/pexels";
 import { Wrench } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,33 +12,20 @@ export const metadata = {
   description: "False ceiling, plumbing, electrical installation, flooring, painting, and civil fabrication works in AP & Telangana.",
 };
 
-export default async function ConstructionWorksPage() {
-  const dynamicImages = await Promise.all([
-    getPexelsImage("building renovation modernization", "square"),
-    getPexelsImage("laying brick mortar cement", "square"),
-    getPexelsImage("tiling floor layout ceramic", "square"),
-    getPexelsImage("painter painting room wall", "square"),
-    getPexelsImage("electrical panel wiring installation", "square"),
-    getPexelsImage("plumbing pipes repair under sink", "square"),
-    getPexelsImage("false ceiling grid frame", "square"),
-    getPexelsImage("brick boundary compound wall", "square"),
-    getPexelsImage("repairing concrete crack cement", "square"),
-    getPexelsImage("waterproofing chemical roof coating", "square"),
-  ]);
-
+export default function ConstructionWorksPage() {
   const subCategories = [
     { title: "House Construction & Extensions", img: "/images/subcategories/house-construction.webp", desc: "Complete structural build, home expansions, and structural alterations." },
-    { title: "Renovation & Modernization", img: dynamicImages[0], desc: "Comprehensive refurbishments for office spaces and large residences." },
-    { title: "Masonry & Brick Work", img: dynamicImages[1], desc: "High-quality concrete block and brick wall partition construction." },
+    { title: "Renovation & Modernization", img: "/images/subcategories/renovation-work.webp", desc: "Comprehensive refurbishments for office spaces and large residences." },
+    { title: "Masonry & Brick Work", img: "/images/subcategories/masonry-brick.webp", desc: "High-quality concrete block and brick wall partition construction." },
     { title: "Plastering & Wall Finishing", img: "/images/subcategories/plastering-wall.webp", desc: "Smooth wall plastering, cement screeding, and wall preparations." },
-    { title: "Tiling Works", img: dynamicImages[2], desc: "Precision ceramic, vitrified tiles, granite, and marble laying." },
-    { title: "Painting Works", img: dynamicImages[3], desc: "Professional interior and exterior painting with putty finishing." },
-    { title: "Electrical Works", img: dynamicImages[4], desc: "Conduit piping, panel boards, wiring, and fixture installation.", linkNote: true },
-    { title: "Plumbing Works", img: dynamicImages[5], desc: "Water supply, drainage piping, sanitary fitting, and booster pump setup." },
-    { title: "False Ceiling Installation", img: dynamicImages[6], desc: "Base metal framing, gypsum board ceiling, grid ceiling, and POP works." },
-    { title: "Boundary Wall & Compound Works", img: dynamicImages[7], desc: "Perimeter brick compound wall and steel gate structural works." },
-    { title: "Minor Civil Repairs", img: dynamicImages[8], desc: "Slab repair, structural cracking injection, and concrete patching." },
-    { title: "Waterproofing Works", img: dynamicImages[9], desc: "Terrace, bathroom, basement dampness prevention and chemical coating." },
+    { title: "Tiling Works", img: "/images/subcategories/tiling-floor.webp", desc: "Precision ceramic, vitrified tiles, granite, and marble laying." },
+    { title: "Painting Works", img: "/images/subcategories/painting-work.webp", desc: "Professional interior and exterior painting with putty finishing." },
+    { title: "Electrical Works", img: "/images/subcategories/electrical-work.webp", desc: "Conduit piping, panel boards, wiring, and fixture installation.", linkNote: true },
+    { title: "Plumbing Works", img: "/images/subcategories/plumbing-work.webp", desc: "Water supply, drainage piping, sanitary fitting, and booster pump setup." },
+    { title: "False Ceiling Installation", img: "/images/subcategories/ceiling-install.webp", desc: "Base metal framing, gypsum board ceiling, grid ceiling, and POP works." },
+    { title: "Boundary Wall & Compound Works", img: "/images/subcategories/boundary-wall.webp", desc: "Perimeter brick compound wall and steel gate structural works." },
+    { title: "Minor Civil Repairs", img: "/images/subcategories/civil-repairs.webp", desc: "Slab repair, structural cracking injection, and concrete patching." },
+    { title: "Waterproofing Works", img: "/images/subcategories/waterproofing-work.webp", desc: "Terrace, bathroom, basement dampness prevention and chemical coating." },
   ];
 
   const faqs = [
