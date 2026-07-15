@@ -2,27 +2,26 @@ import React from "react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SquareImageCard } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import { getPexelsImage } from "@/lib/pexels";
 import { Sparkles } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
   title: "Housekeeping & Sanitary Solutions | Quality Products & Services",
-  description: "Cleaning chemicals, dispensers, tissue products, mops, bins, trolleys for facility management across India.",
+  description: "Cleaning chemicals, floor care, hand hygiene, paper products, bins, cleaning tools, sponges, gloves, sanitary products, and dispensers across India.",
 };
 
-export default async function HousekeepingSanitarySolutionsPage() {
-  const imgTissue = await getPexelsImage("paper hand towel rolls, studio shot, white background", "square");
-
+export default function HousekeepingSanitarySolutionsPage() {
   const subCategories = [
-    { title: "Cleaning Chemicals", img: "/images/subcategories/cleaning-chemicals.webp", desc: "Industrial strength floor, glass, and surface cleaners." },
-    { title: "Dispensers", img: "/images/subcategories/soap-dispenser.webp", desc: "Automatic and manual soap, sanitizer, and tissue dispensers." },
-    { title: "Tissue & Paper Products", img: imgTissue, desc: "Hand towels, toilet rolls, and facial tissues." },
-    { title: "Mops, Brooms & Brushes", img: "/images/subcategories/mop-broom.webp", desc: "Heavy-duty floor cleaning tools and accessories." },
-    { title: "Cloths, Wipes & Pads", img: "/images/subcategories/cleaning-cloth.webp", desc: "Microfiber cloths, sponges, and scrub pads." },
-    { title: "Garbage Bags & Bins", img: "/images/subcategories/garbage-bins.webp", desc: "Waste management bins and bio-hazard bags." },
-    { title: "Mats", img: "/images/subcategories/floor-mats.webp", desc: "Anti-fatigue, entrance, and logo mats for commercial spaces." },
-    { title: "Trolleys, Buckets & Carts", img: "/images/subcategories/cleaning-trolley.webp", desc: "Janitorial carts, mop buckets, and multi-purpose trolleys." },
+    { title: "Cleaning Chemicals", img: "/images/subcategories/cleaning-chemicals.webp", desc: "Floor cleaners, toilet bowl cleaners, glass cleaners, and surface sanitizers." },
+    { title: "Floor Care", img: "/images/subcategories/mop-broom.webp", desc: "Mops, squeegees, caution wet floor boards, and commercial wringer buckets." },
+    { title: "Hand Hygiene", img: "/images/subcategories/house-hand-hygiene.webp", desc: "Premium liquid hand wash, hand sanitizers, and anti-bacterial soaps." },
+    { title: "Paper Products", img: "/images/subcategories/house-paper.webp", desc: "Toilet rolls, paper towels, C-fold tissues, and paper napkin packs." },
+    { title: "Bins & Dustbins", img: "/images/subcategories/garbage-bins.webp", desc: "Push-top waste bins, pedal dustbins, and large trash collection bins." },
+    { title: "Cleaning Tools", img: "/images/subcategories/house-cleaning-tools.webp", desc: "Soft brooms, hard brushes, dustpans, and window cleaning glass wipers." },
+    { title: "Sponges & Scrubbers", img: "/images/subcategories/house-sponges.webp", desc: "Multipurpose kitchen sponges, heavy-duty scrub pads, and metal steel scrubbers." },
+    { title: "Gloves", img: "/images/subcategories/house-gloves.webp", desc: "Reusable latex cleaning gloves, nitrile disposable gloves, and household gloves." },
+    { title: "Sanitary Products", img: "/images/subcategories/house-sanitary.webp", desc: "Urinal screens, toilet bowl brushes, air freshener gels, and urinal blocks." },
+    { title: "Dispensers", img: "/images/subcategories/soap-dispenser.webp", desc: "Automatic sensor hand wash dispensers and wall-mounted tissue towel holders." },
   ];
 
   return (
@@ -48,7 +47,7 @@ export default async function HousekeepingSanitarySolutionsPage() {
             Housekeeping & Sanitary Solutions
           </h1>
           <p className="text-[var(--color-text-on-dark-muted)] text-lg max-w-2xl mx-auto">
-            Everything you need for pristine facility management and professional hygiene maintenance.
+            Comprehensive facility housekeeping supplies, professional floor care, hand hygiene, and tissue products delivered across India.
           </p>
         </div>
       </section>

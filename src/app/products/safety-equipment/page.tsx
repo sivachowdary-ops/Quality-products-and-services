@@ -6,17 +6,21 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Safety Equipment | Quality Products & Services",
-  description: "Head, eye, hand, body and respiratory protection, fall protection, gas detection, road safety products across India.",
+  description: "Head, eye, face, hearing, respiratory, hand, foot, and fall protection, high-visibility clothing, fire safety and traffic signage across India.",
 };
 
 export default function SafetyEquipmentPage() {
   const subCategories = [
-    { title: "Head & Eye Protection", img: "/images/subcategories/safety-helmet.webp", desc: "Industrial helmets, safety goggles, face shields." },
-    { title: "Hand & Body Protection", img: "/images/subcategories/safety-gloves.webp", desc: "Cut-resistant gloves, coveralls, aprons, protective clothing." },
-    { title: "Respiratory Protection", img: "/images/subcategories/respiratory-mask.webp", desc: "Dust masks, half-face and full-face respirators, SCBA." },
-    { title: "Fall Protection", img: "/images/subcategories/safety-harness.webp", desc: "Full-body harnesses, lanyards, retractable lifelines." },
-    { title: "Gas Detection Instruments", img: "/images/subcategories/gas-detector.webp", desc: "Portable monitors and fixed detection systems." },
-    { title: "First Aid Stations", img: "/images/subcategories/first-aid.webp", desc: "Complete medical kits, eye wash stations, stretchers." },
+    { title: "Head Protection", img: "/images/subcategories/safety-head.webp", desc: "Industrial helmets, hard hats, and bump caps in multiple colors." },
+    { title: "Eye & Face Protection", img: "/images/subcategories/safety-eye-face.webp", desc: "Safety goggles, protective spectacles, and full-face shields." },
+    { title: "Hearing Protection", img: "/images/subcategories/safety-hearing.webp", desc: "Noise-cancelling ear muffs and soft silicone corded earplugs." },
+    { title: "Respiratory Protection", img: "/images/subcategories/safety-respiratory.webp", desc: "N95 masks, half-face respirators, and particulate filters." },
+    { title: "Hand Protection", img: "/images/subcategories/safety-hand.webp", desc: "Cut-resistant, nitrile-coated, leather welding, and anti-slip gloves." },
+    { title: "Foot Protection", img: "/images/subcategories/safety-foot.webp", desc: "Steel-toe cap safety shoes, boots, and anti-static industrial footwear." },
+    { title: "High Visibility Clothing", img: "/images/subcategories/safety-high-vis.webp", desc: "Reflective safety vests, rainwear, and high-visibility parkas." },
+    { title: "Fall Protection", img: "/images/subcategories/safety-fall.webp", desc: "Full-body safety harnesses, lifelines, shock-absorbing lanyards, and carabiners." },
+    { title: "Fire Safety", img: "/images/subcategories/safety-fire.webp", desc: "Portable fire extinguishers, fire blankets, and cabinet brackets." },
+    { title: "Traffic & Signage", img: "/images/subcategories/safety-traffic.webp", desc: "Reflective traffic cones, spring posts, wet floor caution boards, and safety barricade tapes." },
   ];
 
   return (
@@ -42,7 +46,7 @@ export default function SafetyEquipmentPage() {
             Safety Equipment
           </h1>
           <p className="text-[var(--color-text-on-dark-muted)] text-lg max-w-2xl mx-auto">
-            Comprehensive PPE, fall protection, gas monitors, and industrial first aid stations supplied across India.
+            Comprehensive B2B personal protective equipment, fall protection, high-visibility clothing, and road safety solutions supplied across India.
           </p>
         </div>
       </section>

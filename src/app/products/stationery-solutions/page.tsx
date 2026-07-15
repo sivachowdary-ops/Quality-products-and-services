@@ -7,21 +7,32 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Stationery Solutions | Quality Products & Services",
-  description: "Office stationery, writing instruments, notebooks, files, office essentials, printers and copier paper supplied across India.",
+  description: "Office stationery, writing instruments, notebooks, files, sticky notes, envelopes, calculators, stamp & ink, tapes, and presentation boards supplied across India.",
 };
 
 export default async function StationerySolutionsPage() {
-  const imgNotebooks = await getPexelsImage("office notebooks paper stack, white background", "square");
+  const dynamicImages = await Promise.all([
+    getPexelsImage("sticky notes memo pads, white background", "square"),
+    getPexelsImage("brown envelopes stack document pocket, white background", "square"),
+    getPexelsImage("desktop electronic calculator, white background", "square"),
+    getPexelsImage("self inking stamp pad ink, white background", "square"),
+    getPexelsImage("packaging tape glue stick, white background", "square"),
+    getPexelsImage("whiteboard easel stand, clean background", "square"),
+  ]);
 
   const subCategories = [
-    { title: "Writing Instruments", img: "/images/subcategories/writing-pens.webp", desc: "Ballpoint, gel, marker pens, and pencil sets." },
-    { title: "Notebooks & Papers", img: imgNotebooks, desc: "Spiral, hardbound, and ruled notebooks in all sizes." },
-    { title: "Files & Folders", img: "/images/subcategories/files-folders.webp", desc: "Lever arch, ring binders, box files, and document wallets." },
-    { title: "Office Essentials", img: "/images/subcategories/office-essentials.webp", desc: "Staplers, punches, paper clips, rubber bands, pins." },
-    { title: "Art & Craft Supplies", img: "/images/subcategories/art-supplies.webp", desc: "Colors, sketch pens, drawing sheets, and craft materials." },
-    { title: "Printers & Ink / Toner", img: "/images/subcategories/printer-toner.webp", desc: "Compatible and original ink cartridges and toner." },
-    { title: "Copier Paper (A4)", img: "/images/subcategories/copier-paper.webp", desc: "Premium 75GSM and 80GSM copier paper in bulk." },
-    { title: "Desk Organizers", img: "/images/subcategories/desk-organizers.webp", desc: "Pen stands, magazine racks, and desktop filing trays." },
+    { title: "Writing Instruments", img: "/images/subcategories/writing-pens.webp", desc: "Ballpoint pens, gel pens, marker pens, and highlighters." },
+    { title: "Notebooks & Papers", img: "/images/subcategories/notebooks.webp", desc: "Spiral notebooks, register registers, writing pads, and notebook stacks." },
+    { title: "Files & Folders", img: "/images/subcategories/files-folders.webp", desc: "Lever arch files, ring binders, display folders, and document envelopes." },
+    { title: "Office Essentials", img: "/images/subcategories/office-essentials.webp", desc: "Staplers, hole punchers, paper clips, and basic desk essentials." },
+    { title: "Sticky Notes & Memo Pads", img: dynamicImages[0], desc: "Colorful post-it notes, page flags, and memo blocks." },
+    { title: "Envelopes & Documents", img: dynamicImages[1], desc: "Kraft paper envelopes, white courier envelopes, and document pocket files." },
+    { title: "Art & Craft Supplies", img: "/images/subcategories/art-supplies.webp", desc: "Colors, sketch pens, craft scissors, and drawing sheets." },
+    { title: "Calculators", img: dynamicImages[2], desc: "12-digit desktop electronic calculators and scientific calculators." },
+    { title: "Desk Organizers", img: "/images/subcategories/desk-organizers.webp", desc: "Mesh metal pen stands, desktop document sorting trays, and organizers." },
+    { title: "Stamp & Ink", img: dynamicImages[3], desc: "Self-inking stamps, dater stamps, stamp pads, and refill ink bottles." },
+    { title: "Tapes & Adhesives", img: dynamicImages[4], desc: "Heavy-duty packaging tapes, glue sticks, glue bottles, and masking tape." },
+    { title: "Presentation & Board", img: dynamicImages[5], desc: "Non-magnetic and magnetic whiteboards, easel flipcharts, and markers." },
   ];
 
   return (
@@ -47,7 +58,7 @@ export default async function StationerySolutionsPage() {
             Stationery Solutions
           </h1>
           <p className="text-[var(--color-text-on-dark-muted)] text-lg max-w-2xl mx-auto">
-            Comprehensive office stationery, paper, desktop organization, and printing supplies for corporate workspaces across India.
+            Comprehensive office stationery, paper products, calculators, filing systems, and tapes for corporate workspaces across India.
           </p>
         </div>
       </section>
