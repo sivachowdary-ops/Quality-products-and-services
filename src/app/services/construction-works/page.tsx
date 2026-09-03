@@ -26,6 +26,10 @@ export default function ConstructionWorksPage() {
     { title: "Boundary Wall & Compound Works", img: "/images/subcategories/boundary-wall.webp", desc: "Perimeter brick compound wall and steel gate structural works." },
     { title: "Minor Civil Repairs", img: "/images/subcategories/civil-repairs.webp", desc: "Slab repair, structural cracking injection, and concrete patching." },
     { title: "Waterproofing Works", img: "/images/subcategories/waterproofing-work.webp", desc: "Terrace, bathroom, basement dampness prevention and chemical coating." },
+    { title: "Aluminium Ladders", img: "/images/subcategories/aluminium-ladders.webp", desc: "Heavy-duty foldable, telescopic, and platform ladders for safe elevated construction and site access." },
+    { title: "Wire Nails", img: "/images/subcategories/wire-nails.webp", desc: "High-grade iron and steel wire nails for carpentry, formwork, shuttering, and framing." },
+    { title: "Nut & Bolts", img: "/images/subcategories/nuts-bolts.webp", desc: "High-tensile hex head bolts, nuts, threaded rods, and washer sets for structural & mechanical fastening." },
+    { title: "MS Binding Wire", img: "/images/subcategories/ms-binding-wire.webp", desc: "Annealed mild steel (MS) binding wire coils for TMT bar reinforcement and structural civil work." },
   ];
 
   const faqs = [

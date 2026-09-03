@@ -82,6 +82,10 @@ export default function Home() {
     { title: "Modular Kitchen Fitting", img: "/images/interior-works.webp", cat: "Interiors" },
     { title: "First Aid Kits", img: "/images/explore/firstaid.webp", cat: "Safety" },
     { title: "Traffic Barricades", img: "/images/explore/barricade.webp", cat: "Road Safety" },
+    { title: "Aluminium Ladders", img: "/images/subcategories/aluminium-ladders.webp", cat: "Access & Safety" },
+    { title: "Nut & Bolts Fasteners", img: "/images/subcategories/nuts-bolts.webp", cat: "Hardware" },
+    { title: "MS Binding Wire", img: "/images/subcategories/ms-binding-wire.webp", cat: "Construction" },
+    { title: "Steel Wire Nails", img: "/images/subcategories/wire-nails.webp", cat: "Hardware" },
   ];
 
   return (

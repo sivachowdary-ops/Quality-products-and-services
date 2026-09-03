@@ -24,7 +24,7 @@ export default function ProductsHubPage() {
       imageUrl: "/images/safety-equipment.webp",
       label: "Personal Safety",
       link: "/products/safety-equipment",
-      bullets: ["Head & Eye Protection", "Hand & Body Protection", "Respiratory Protection", "Fall Protection", "Road Safety Products", "Safety Shoes & Signage"]
+      bullets: ["Head & Eye Protection", "Hand & Body Protection", "Aluminium Ladders", "Fall Protection", "Road Safety Products", "Safety Shoes & Signage"]
     },
     {
       title: "Housekeeping & Sanitary Solutions",
