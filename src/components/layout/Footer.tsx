@@ -55,7 +55,7 @@ export const Footer = () => {
               </li>
               <li>
                 <Link href="/products/safety-equipment" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
-                  Safety Equipment
+                  Safety Materials
                 </Link>
               </li>
               <li>

@@ -123,7 +123,7 @@ export default function ContactPage() {
                   >
                     <option value="General Enquiry">General Enquiry</option>
                     <option value="Fire Fighting Equipment">Fire Fighting Equipment</option>
-                    <option value="Safety Equipment">Safety Equipment</option>
+                    <option value="Safety Materials">Safety Materials</option>
                     <option value="Housekeeping & Sanitary Solutions">Housekeeping & Sanitary Solutions</option>
                     <option value="Stationery Solutions">Stationery Solutions</option>
                     <option value="Electrical Materials">Electrical Materials</option>

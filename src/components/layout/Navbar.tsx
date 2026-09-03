@@ -16,7 +16,7 @@ const NAV_LINKS = [
     href: "/products",
     dropdown: [
       { name: "Fire Fighting Equipment", href: "/products/fire-equipment", icon: FlameKindling },
-      { name: "Safety Equipment", href: "/products/safety-equipment", icon: HardHat },
+      { name: "Safety Materials", href: "/products/safety-equipment", icon: HardHat },
       { name: "Housekeeping & Sanitary", href: "/products/housekeeping-sanitary-solutions", icon: Sparkles },
       { name: "Stationery Solutions", href: "/products/stationery-solutions", icon: NotebookPen },
       { name: "Electrical Materials", href: "/products/electrical-materials", icon: Zap },

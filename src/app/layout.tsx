@@ -19,14 +19,14 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Quality Products & Services | KPHB, Hyderabad",
-  description: "Complete Solutions Under One Roof: Fire Equipment, Safety Equipment, Housekeeping & Sanitary Solutions, Stationery, Electrical Materials, Construction Works & Interior Works. Products supplied across India.",
+  description: "Complete Solutions Under One Roof: Fire Equipment, Safety Materials, Housekeeping & Sanitary Solutions, Stationery, Electrical Materials, Construction Works & Interior Works. Products supplied across India.",
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Quality Products & Services",
-  "description": "B2B supplier of fire equipment, safety equipment, housekeeping & sanitary solutions, stationery, and electrical materials across India. Construction and interior works services in AP & Telangana.",
+  "description": "B2B supplier of fire equipment, safety materials, housekeeping & sanitary solutions, stationery, and electrical materials across India. Construction and interior works services in AP & Telangana.",
   "url": "https://quality-products-and-services.vercel.app",
   "telephone": "+919993454442",
   "email": "qualityproductsandservices999@gmail.com",
@@ -44,7 +44,7 @@ const jsonLd = {
     "name": "Products & Services",
     "itemListElement": [
       { "@type": "OfferCatalog", "name": "Fire Fighting Equipment" },
-      { "@type": "OfferCatalog", "name": "Safety Equipment" },
+      { "@type": "OfferCatalog", "name": "Safety Materials" },
       { "@type": "OfferCatalog", "name": "Housekeeping & Sanitary Solutions" },
       { "@type": "OfferCatalog", "name": "Stationery Solutions" },
       { "@type": "OfferCatalog", "name": "Electrical Materials" },

@@ -5,7 +5,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export const metadata = {
   title: "Our Products | Quality Products & Services",
-  description: "Browse our complete product range: Fire Equipment, Safety Equipment, Housekeeping & Sanitary Solutions, Stationery, and Electrical Materials supplied across India.",
+  description: "Browse our complete product range: Fire Equipment, Safety Materials, Housekeeping & Sanitary Solutions, Stationery, and Electrical Materials supplied across India.",
 };
 
 export default function ProductsHubPage() {
@@ -19,8 +19,8 @@ export default function ProductsHubPage() {
       bullets: ["Fire Extinguishers", "Hose Reels & Hydrants", "Fire Blankets", "Smoke Detectors", "Sprinkler Systems", "Suppression Systems"]
     },
     {
-      title: "Safety Equipment",
-      description: "PPE, fall protection, gas detection, road safety items, ESD shoes, and safety signage.",
+      title: "Safety Materials",
+      description: "PPE, fall protection, aluminium ladders, gas detection, road safety items, ESD shoes, and safety signage.",
       imageUrl: "/images/safety-equipment.webp",
       label: "Personal Safety",
       link: "/products/safety-equipment",

@@ -5,7 +5,7 @@ import { getPexelsImage } from "@/lib/pexels";
 
 export const metadata = {
   title: "FAQs | Quality Products & Services",
-  description: "Frequently Asked Questions about our construction works, fire safety equipment, and cleaning supplies.",
+  description: "Frequently Asked Questions about our construction works, fire fighting equipment, safety materials, and cleaning supplies.",
 };
 
 export default async function FAQsPage() {
@@ -78,7 +78,7 @@ export default async function FAQsPage() {
 
           <div>
             <SectionHeading 
-              title="Fire & Safety Equipment" 
+              title="Fire Equipment & Safety Materials" 
               className="mb-8"
             />
             <FAQAccordion items={safetyFaqs} />

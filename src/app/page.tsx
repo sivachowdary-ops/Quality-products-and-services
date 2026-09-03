@@ -17,8 +17,8 @@ export default function Home() {
       link: "/products/fire-equipment"
     },
     {
-      title: "Safety Equipment",
-      description: "PPE, fall protection, gas detection, road safety items, ESD shoes, and safety signage.",
+      title: "Safety Materials",
+      description: "PPE, fall protection, aluminium ladders, gas detection, road safety items, ESD shoes, and safety signage.",
       imageUrl: "/images/safety-equipment.webp",
       label: "Products",
       link: "/products/safety-equipment"

@@ -5,8 +5,8 @@ import { HardHat } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Safety Equipment | Quality Products & Services",
-  description: "Head, eye, face, hearing, respiratory, hand, foot, and fall protection, high-visibility clothing, fire safety and traffic signage across India.",
+  title: "Safety Materials | Quality Products & Services",
+  description: "Head, eye, face, hearing, respiratory, hand, foot, and fall protection, aluminium ladders, high-visibility clothing, fire safety and traffic signage across India.",
 };
 
 export default function SafetyEquipmentPage() {
@@ -31,7 +31,7 @@ export default function SafetyEquipmentPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/safety-equipment.webp" 
-            alt="Safety Equipment Background" 
+            alt="Safety Materials Background" 
             fill 
             className="object-cover opacity-20"
             priority
@@ -44,7 +44,7 @@ export default function SafetyEquipmentPage() {
             <HardHat className="w-8 h-8" />
           </div>
           <h1 className="text-[var(--color-text-on-dark)] text-4xl md:text-5xl font-bold font-heading mb-4">
-            Safety Equipment
+            Safety Materials
           </h1>
           <p className="text-[var(--color-text-on-dark-muted)] text-lg max-w-2xl mx-auto">
             Comprehensive B2B personal protective equipment, fall protection, high-visibility clothing, and road safety solutions supplied across India.
@@ -60,7 +60,7 @@ export default function SafetyEquipmentPage() {
             <p className="text-[var(--color-text-on-light-muted)]">We supply large quantities with special B2B pricing across India.</p>
           </div>
           <Button variant="whatsapp" asChild>
-            <a href="https://wa.me/919993454442?text=Hi%2C%20I%20have%20a%20requirement%20for%20Safety%20Equipment.%20Please%20share%20details.">
+            <a href="https://wa.me/919993454442?text=Hi%2C%20I%20have%20a%20requirement%20for%20Safety%20Materials.%20Please%20share%20details.">
               Enquire for Bulk Order
             </a>
           </Button>

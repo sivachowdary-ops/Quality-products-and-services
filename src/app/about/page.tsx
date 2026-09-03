@@ -61,7 +61,7 @@ export default async function AboutPage() {
                   Welcome to Quality Products & Services, headquartered at Sri Sai Nagar, KPHB, Hyderabad. We are a dedicated B2B supplier and service provider designed to meet the rigorous demands of modern facilities, builders, and corporate procurement teams.
                 </p>
                 <p>
-                  Our foundation was built on a simple premise: provide reliable, top-tier products without compromising on quality or service. Over the years, we have grown into a comprehensive &ldquo;One-Stop Solution&rdquo; spanning seven verticals: Fire Fighting Equipment, Safety Equipment, Housekeeping & Sanitary Solutions, Stationery Solutions, and Electrical Materials on the products side — plus Construction Works and Interior Works as full-service execution offerings.
+                  Our foundation was built on a simple premise: provide reliable, top-tier products without compromising on quality or service. Over the years, we have grown into a comprehensive &ldquo;One-Stop Solution&rdquo; spanning seven verticals: Fire Fighting Equipment, Safety Materials, Housekeeping & Sanitary Solutions, Stationery Solutions, and Electrical Materials on the products side — plus Construction Works and Interior Works as full-service execution offerings.
                 </p>
                 <p>
                   Whether it&apos;s supplying industrial-grade safety gear to a factory floor, outfitting an entire office with stationery and electrical materials, executing a flawless false ceiling project, or designing a modern modular kitchen — our experienced team ensures total satisfaction.
@@ -107,7 +107,7 @@ export default async function AboutPage() {
           </div>
           <h2 className="text-3xl font-bold font-heading text-[var(--color-text-on-light)] mb-4">Areas We Serve</h2>
           <p className="text-[var(--color-text-on-light-muted)] text-lg mb-4">
-            We supply our full product range — Fire Equipment, Safety Equipment, Housekeeping & Sanitary Solutions, Stationery, and Electrical Materials — <strong className="text-[var(--color-text-on-light)]">across India</strong>.
+            We supply our full product range — Fire Equipment, Safety Materials, Housekeeping & Sanitary Solutions, Stationery, and Electrical Materials — <strong className="text-[var(--color-text-on-light)]">across India</strong>.
           </p>
           <p className="text-[var(--color-text-on-light-muted)] text-lg mb-8">
             Our construction and interior execution services are currently available across <strong className="text-[var(--color-text-on-light)]">Andhra Pradesh and Telangana</strong>.
