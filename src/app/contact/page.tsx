@@ -127,6 +127,10 @@ export default function ContactPage() {
                     <option value="Housekeeping & Sanitary Solutions">Housekeeping & Sanitary Solutions</option>
                     <option value="Stationery Solutions">Stationery Solutions</option>
                     <option value="Electrical Materials">Electrical Materials</option>
+                    <option value="Aluminium Ladders">Aluminium Ladders</option>
+                    <option value="Wire Nails">Wire Nails</option>
+                    <option value="Nut & Bolts Fasteners">Nut & Bolts Fasteners</option>
+                    <option value="MS Binding Wire">MS Binding Wire</option>
                     <option value="Construction Works">Construction Works</option>
                     <option value="Interior Works">Interior Works</option>
                   </select>

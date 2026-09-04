@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Menu, X, ChevronDown, Wrench, Sparkles, FlameKindling, HardHat, NotebookPen, Zap, PaintBucket } from "lucide-react";
+import { Menu, X, ChevronDown, Wrench, Sparkles, FlameKindling, HardHat, NotebookPen, Zap, PaintBucket, Layers, Hammer, Bolt, Boxes } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +20,10 @@ const NAV_LINKS = [
       { name: "Housekeeping & Sanitary", href: "/products/housekeeping-sanitary-solutions", icon: Sparkles },
       { name: "Stationery Solutions", href: "/products/stationery-solutions", icon: NotebookPen },
       { name: "Electrical Materials", href: "/products/electrical-materials", icon: Zap },
+      { name: "Aluminium Ladders", href: "/products/aluminium-ladders", icon: Layers },
+      { name: "Wire Nails", href: "/products/wire-nails", icon: Hammer },
+      { name: "Nut & Bolts Fasteners", href: "/products/nuts-bolts", icon: Bolt },
+      { name: "MS Binding Wire", href: "/products/ms-binding-wire", icon: Boxes },
     ],
   },
   {
@@ -101,16 +105,16 @@ export const Navbar = () => {
 
                 {/* Dropdown */}
                 {link.dropdown && (
-                  <div className="absolute top-full pt-4 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out w-72 pointer-events-none group-hover:pointer-events-auto">
-                    <div className="bg-[var(--color-surface-white)] rounded-[var(--radius-lg)] shadow-[var(--shadow-card-hover)] p-3 flex flex-col gap-1 border border-[#E8EAED]">
+                  <div className="absolute top-full pt-4 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out w-80 pointer-events-none group-hover:pointer-events-auto">
+                    <div className="bg-[var(--color-surface-white)] rounded-[var(--radius-lg)] shadow-[var(--shadow-card-hover)] p-2 flex flex-col gap-1 border border-[#E8EAED] max-h-[75vh] overflow-y-auto">
                       {link.dropdown.map((subItem) => (
                         <Link
                           key={subItem.name}
                           href={subItem.href}
-                          className="flex items-center gap-3 px-4 py-3 rounded-[var(--radius-md)] hover:bg-[var(--color-surface-grey)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] text-[var(--color-text-on-light)]"
+                          className="flex items-center gap-3 px-3 py-2.5 rounded-[var(--radius-md)] hover:bg-[var(--color-surface-grey)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] text-[var(--color-text-on-light)]"
                         >
-                          <subItem.icon className={cn("w-5 h-5", subItem.name.includes("Fire") ? "text-[var(--color-brand-red)]" : "text-[var(--color-brand-gold)]")} />
-                          <span className="font-medium text-sm">{subItem.name}</span>
+                          <subItem.icon className={cn("w-4 h-4 shrink-0", subItem.name.includes("Fire") ? "text-[var(--color-brand-red)]" : "text-[var(--color-brand-gold)]")} />
+                          <span className="font-medium text-sm leading-tight">{subItem.name}</span>
                         </Link>
                       ))}
                     </div>

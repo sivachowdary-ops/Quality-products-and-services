@@ -73,6 +73,26 @@ export const Footer = () => {
                   Electrical Materials
                 </Link>
               </li>
+              <li>
+                <Link href="/products/aluminium-ladders" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Aluminium Ladders
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/wire-nails" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Wire Nails
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/nuts-bolts" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Nut & Bolts Fasteners
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/ms-binding-wire" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  MS Binding Wire
+                </Link>
+              </li>
             </ul>
 
             <h4 className="font-heading font-semibold text-base mb-2">Services</h4>

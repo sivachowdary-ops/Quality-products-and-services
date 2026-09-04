@@ -5,7 +5,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export const metadata = {
   title: "Our Products | Quality Products & Services",
-  description: "Browse our complete product range: Fire Equipment, Safety Materials, Housekeeping & Sanitary Solutions, Stationery, and Electrical Materials supplied across India.",
+  description: "Browse our complete product range: Fire Equipment, Safety Materials, Housekeeping & Sanitary Solutions, Stationery, Electrical Materials, Aluminium Ladders, Wire Nails, Nut & Bolts Fasteners, and MS Binding Wire supplied across India.",
 };
 
 export default function ProductsHubPage() {
@@ -20,11 +20,11 @@ export default function ProductsHubPage() {
     },
     {
       title: "Safety Materials",
-      description: "PPE, fall protection, aluminium ladders, gas detection, road safety items, ESD shoes, and safety signage.",
+      description: "PPE, fall protection, high-visibility clothing, gas detection, road safety items, ESD shoes, and safety signage.",
       imageUrl: "/images/safety-equipment.webp",
       label: "Personal Safety",
       link: "/products/safety-equipment",
-      bullets: ["Head & Eye Protection", "Hand & Body Protection", "Aluminium Ladders", "Fall Protection", "Road Safety Products", "Safety Shoes & Signage"]
+      bullets: ["Head & Eye Protection", "Hand & Body Protection", "Respiratory Protection", "Fall Protection", "Road Safety Products", "Safety Shoes & Signage"]
     },
     {
       title: "Housekeeping & Sanitary Solutions",
@@ -49,6 +49,38 @@ export default function ProductsHubPage() {
       label: "Electricals",
       link: "/products/electrical-materials",
       bullets: ["Wires & Cables", "MCBs & DB Boxes", "Switches & Sockets", "Lighting Solutions", "Conduits & Fittings", "Industrial Plug Fittings"]
+    },
+    {
+      title: "Aluminium Ladders",
+      description: "Self-supporting step ladders, multi-purpose folding ladders, telescopic and scaffolding tower ladders.",
+      imageUrl: "/images/subcategories/aluminium-ladders.webp",
+      label: "Safety & Access",
+      link: "/products/aluminium-ladders",
+      bullets: ["A-Type Step Ladders", "Multi-Purpose Folding", "Extension & Telescopic", "Platform Step Ladders", "Straight Wall Ladders", "Mobile Scaffolding Towers"]
+    },
+    {
+      title: "Wire Nails",
+      description: "Complete range of common wire nails, hardened concrete nails, duplex formwork nails, and roofing umbrella nails.",
+      imageUrl: "/images/subcategories/wire-nails.webp",
+      label: "Hardware",
+      link: "/products/wire-nails",
+      bullets: ["Common Steel Wire Nails", "Concrete & Masonry Nails", "Duplex Shuttering Nails", "Roofing Umbrella Nails", "Brad & Finishing Nails", "Collated Coil Nails"]
+    },
+    {
+      title: "Nut & Bolts Fasteners",
+      description: "High-tensile Grade 8.8/10.9 hex bolts, heavy hex nuts, threaded rods, and concrete expansion anchor fasteners.",
+      imageUrl: "/images/subcategories/nuts-bolts.webp",
+      label: "Fasteners",
+      link: "/products/nuts-bolts",
+      bullets: ["Hex Head Machine Bolts", "Hex Nuts & Heavy Nuts", "Threaded Rods & Studs", "Concrete Anchor Fasteners", "Socket Head Cap Screws", "Plain & Spring Washers"]
+    },
+    {
+      title: "MS Binding Wire",
+      description: "Soft annealed mild steel binding wire (16G, 18G, 20G), galvanized iron GI wire, and loop ties for rebar tying.",
+      imageUrl: "/images/subcategories/ms-binding-wire.webp",
+      label: "Civil Supplies",
+      link: "/products/ms-binding-wire",
+      bullets: ["18 Gauge (1.2mm) Wire", "20 Gauge (0.9mm) Wire", "16 Gauge (1.6mm) Heavy Wire", "Galvanized GI Wire", "Double Loop Rebar Ties", "25kg / 50kg Bulk Coils"]
     }
   ];
 
@@ -57,7 +89,7 @@ export default function ProductsHubPage() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <SectionHeading 
           title="Our Products" 
-          subtitle="Explore our five core product verticals, supplied and delivered to businesses and sites across India."
+          subtitle="Explore our nine core product verticals, supplied and delivered to businesses and sites across India."
           className="mb-16"
         />
 

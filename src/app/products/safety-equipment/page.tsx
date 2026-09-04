@@ -19,7 +19,6 @@ export default function SafetyEquipmentPage() {
     { title: "Foot Protection", img: "/images/subcategories/safety-foot.webp", desc: "Steel-toe cap safety shoes, boots, and anti-static industrial footwear." },
     { title: "High Visibility Clothing", img: "/images/subcategories/safety-high-vis.webp", desc: "Reflective safety vests, rainwear, and high-visibility parkas." },
     { title: "Fall Protection", img: "/images/subcategories/safety-fall.webp", desc: "Full-body safety harnesses, lifelines, shock-absorbing lanyards, and carabiners." },
-    { title: "Aluminium Ladders", img: "/images/subcategories/aluminium-ladders.webp", desc: "Heavy-duty foldable step ladders, telescopic, and platform ladders for safe elevation access." },
     { title: "Fire Safety", img: "/images/subcategories/safety-fire.webp", desc: "Portable fire extinguishers, fire blankets, and cabinet brackets." },
     { title: "Traffic & Signage", img: "/images/subcategories/safety-traffic.webp", desc: "Reflective traffic cones, spring posts, wet floor caution boards, and safety barricade tapes." },
   ];

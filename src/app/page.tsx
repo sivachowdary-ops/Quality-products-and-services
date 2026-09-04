@@ -18,7 +18,7 @@ export default function Home() {
     },
     {
       title: "Safety Materials",
-      description: "PPE, fall protection, aluminium ladders, gas detection, road safety items, ESD shoes, and safety signage.",
+      description: "PPE, fall protection, high-visibility clothing, gas detection, road safety, and ESD shoes.",
       imageUrl: "/images/safety-equipment.webp",
       label: "Products",
       link: "/products/safety-equipment"
@@ -43,6 +43,34 @@ export default function Home() {
       imageUrl: "/images/electrical-materials.webp",
       label: "Products",
       link: "/products/electrical-materials"
+    },
+    {
+      title: "Aluminium Ladders",
+      description: "Industrial step ladders, multi-purpose folding, telescopic, and mobile scaffolding towers.",
+      imageUrl: "/images/subcategories/aluminium-ladders.webp",
+      label: "Products",
+      link: "/products/aluminium-ladders"
+    },
+    {
+      title: "Wire Nails",
+      description: "Common wire nails, concrete steel nails, duplex formwork nails, and roofing umbrella nails.",
+      imageUrl: "/images/subcategories/wire-nails.webp",
+      label: "Products",
+      link: "/products/wire-nails"
+    },
+    {
+      title: "Nut & Bolts Fasteners",
+      description: "Hex head machine bolts, structural nuts, threaded rods, and concrete expansion anchor fasteners.",
+      imageUrl: "/images/subcategories/nuts-bolts.webp",
+      label: "Products",
+      link: "/products/nuts-bolts"
+    },
+    {
+      title: "MS Binding Wire",
+      description: "Annealed mild steel (16G, 18G, 20G), galvanized GI binding wire, and double loop rebar ties.",
+      imageUrl: "/images/subcategories/ms-binding-wire.webp",
+      label: "Products",
+      link: "/products/ms-binding-wire"
     }
   ];
 
