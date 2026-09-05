@@ -20,7 +20,7 @@ export default function WaterproofingWorksPage() {
     },
     { 
       title: "Basement & Retaining Wall Sealing", 
-      img: "/images/subcategories/waterproofing-service-card.webp", 
+      img: "/images/subcategories/waterproof-basement.webp", 
       desc: "Positive and negative side crystalline coatings and bituminous membrane protection against hydrostatic groundwater pressure." 
     },
     { 
@@ -30,17 +30,17 @@ export default function WaterproofingWorksPage() {
     },
     { 
       title: "PU Injection Grouting", 
-      img: "/images/subcategories/waterproofing-service-card.webp", 
+      img: "/images/subcategories/waterproof-pu-grouting.webp", 
       desc: "High-pressure polyurethane injection grouting to stop active water gushing, structural crack leaks, and expansion joint seepage." 
     },
     { 
       title: "Exterior Wall Damp Proofing", 
-      img: "/images/subcategories/waterproofing-work.webp", 
+      img: "/images/subcategories/waterproof-exterior-damp.webp", 
       desc: "Rain-proof breathable hydrophobic exterior coatings preventing efflorescence, paint peeling, and dampness penetration." 
     },
     { 
       title: "Water Tank & Sump Waterproofing", 
-      img: "/images/subcategories/waterproofing-service-card.webp", 
+      img: "/images/subcategories/waterproof-water-tank.webp", 
       desc: "Non-toxic, food-grade certified epoxy and polymer-modified cementitious linings for underground sumps and overhead tanks." 
     },
   ];

@@ -28,17 +28,17 @@ export default function AluminiumLaddersPage() {
     },
     { 
       title: "Platform & Step Stool Ladders", 
-      img: "/images/subcategories/aluminium-ladders.webp", 
+      img: "/images/subcategories/ladder-platform-stool.webp", 
       desc: "Wide platform standing ladders with high safety guardrails for warehouse picking, facility maintenance, and painting." 
     },
     { 
       title: "Straight Single Wall Ladders", 
-      img: "/images/subcategories/ladder-extension.webp", 
+      img: "/images/subcategories/ladder-straight-single.webp", 
       desc: "Rigid single-section aluminium wall leaning ladders with heavy-duty side rails and non-skid rubber shoe grips." 
     },
     { 
       title: "Mobile Tower Scaffolding Ladders", 
-      img: "/images/subcategories/ladder-multipurpose.webp", 
+      img: "/images/subcategories/ladder-mobile-tower.webp", 
       desc: "Modular aluminium mobile tower scaffolds with caster wheels, outriggers, and trapdoor platforms for heavy industrial sites." 
     },
   ];

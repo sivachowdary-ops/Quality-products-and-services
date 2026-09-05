@@ -5,8 +5,8 @@ import { HardHat } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Construction Equipments & Tools | Quality Products & Services",
-  description: "B2B supplier of shuttering oil, concrete shuttering tape, concrete vibrators, rebar cutters, scaffolding accessories, and civil site equipment across India.",
+  title: "Construction Materials & Consumables | Quality Products & Services",
+  description: "B2B supplier of shuttering oil, concrete shuttering tape, mastic pads, gunny clothes, waterproofing chemicals, and civil site consumables across India.",
 };
 
 export default function ConstructionEquipmentToolsPage() {
@@ -22,24 +22,19 @@ export default function ConstructionEquipmentToolsPage() {
       desc: "Heavy-duty waterproof adhesive tape in 50mm widths for sealing concrete shuttering plate joints, preventing slurry leakage and edge damage." 
     },
     { 
-      title: "Concrete Needle Vibrators & Drives", 
-      img: "/images/subcategories/shuttering-oil.webp", 
-      desc: "Petrol and electric high-frequency concrete needle vibrators, poker shafts, and surface plate compactors for void-free concrete consolidation." 
+      title: "Mastic Pad (Expansion Joint Filler)", 
+      img: "/images/subcategories/mastic-pad.webp", 
+      desc: "Bitumen-impregnated fibreboard mastic pads and expansion joint filler sheets for concrete pavement, bridges, and industrial flooring joints." 
     },
     { 
-      title: "Rebar Cutters & Bar Benders", 
-      img: "/images/subcategories/tools-hand-manual.webp", 
-      desc: "Heavy-duty manual and motorized TMT rebar bending keys, hydraulic rod cutters, and stirrup benders for fast on-site steel reinforcement." 
+      title: "Gunny Clothes & Curing Fabric", 
+      img: "/images/subcategories/gunny-clothes.webp", 
+      desc: "Heavy-duty natural jute hessian gunny cloth rolls and curing sheets for superior water retention during concrete slab and column curing." 
     },
     { 
-      title: "Scaffolding Couplers & Formwork Parts", 
-      img: "/images/subcategories/nuts-bolts.webp", 
-      desc: "Forged swivel clamps, fixed right-angle couplers, tie rods, wing nuts, water stoppers, and prop sleeve nuts for structural staging." 
-    },
-    { 
-      title: "Wheelbarrows, Pans & Earth Rammers", 
-      img: "/images/subcategories/tools-hand-manual.webp", 
-      desc: "Heavy-gauge dual-wheel and single-wheel site wheelbarrows, GI mortar pans, tamping earth rammers, and masonry shovels." 
+      title: "Waterproofing Chemicals & Admixtures", 
+      img: "/images/subcategories/waterproofing-chemicals.webp", 
+      desc: "Integral liquid waterproofing compounds, acrylic polymer bonding agents (SBR latex), and crystalline protective chemicals for durable concrete." 
     },
   ];
 
@@ -63,10 +58,10 @@ export default function ConstructionEquipmentToolsPage() {
             <HardHat className="w-8 h-8" />
           </div>
           <h1 className="text-[var(--color-text-on-dark)] text-4xl md:text-5xl font-bold font-heading mb-4">
-            Construction Equipments & Tools
+            Construction Materials & Consumables
           </h1>
           <p className="text-[var(--color-text-on-dark-muted)] text-lg max-w-2xl mx-auto">
-            Essential site consumables and machinery: premium shuttering oil, waterproof concrete joint tape, needle vibrators, rebar tools, and staging hardware supplied nationwide.
+            Essential civil project materials: premium shuttering oil, concrete joint tape, mastic expansion pads, gunny clothes, and waterproofing chemicals supplied nationwide.
           </p>
         </div>
       </section>

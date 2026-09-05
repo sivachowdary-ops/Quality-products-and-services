@@ -18,17 +18,17 @@ export default function MSBindingWirePage() {
     },
     { 
       title: "20 Gauge (0.9mm) Soft Annealed Wire", 
-      img: "/images/subcategories/ms-binding-wire.webp", 
+      img: "/images/subcategories/wire-20g-soft.webp", 
       desc: "Super-soft pliable wire tailored for delicate civil works, mesh tying, false ceiling framework wire hanging, and light shuttering." 
     },
     { 
       title: "16 Gauge (1.6mm) Heavy Civil Wire", 
-      img: "/images/subcategories/ms-binding-wire.webp", 
+      img: "/images/subcategories/wire-16g-heavy.webp", 
       desc: "Heavy-gauge thick annealed wire for bridge construction, industrial foundations, heavy column cages, and pre-cast concrete structures." 
     },
     { 
       title: "Galvanized Iron (GI) Binding Wire", 
-      img: "/images/subcategories/ms-binding-wire.webp", 
+      img: "/images/subcategories/wire-gi-binding.webp", 
       desc: "Zinc-coated rust-resistant wire for coastal projects, exterior fencing, damp environments, and exposed structural rebar tying." 
     },
     { 
@@ -38,7 +38,7 @@ export default function MSBindingWirePage() {
     },
     { 
       title: "Bulk 25kg / 50kg Industrial Wire Coils", 
-      img: "/images/subcategories/ms-binding-wire.webp", 
+      img: "/images/subcategories/wire-bulk-coils.webp", 
       desc: "Tightly strapped, oil-coated, rust-preventive wrapped 25kg and 50kg bundle coils supplied at manufacturer wholesale rates across India." 
     },
   ];

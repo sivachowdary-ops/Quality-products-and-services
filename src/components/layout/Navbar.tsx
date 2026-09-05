@@ -25,7 +25,7 @@ const NAV_LINKS = [
       { name: "Nut & Bolts Fasteners", href: "/products/nuts-bolts", icon: Bolt },
       { name: "MS Binding Wire", href: "/products/ms-binding-wire", icon: Boxes },
       { name: "Industrial Tools & Spares", href: "/products/industrial-tools-spares", icon: Wrench },
-      { name: "Construction Equipments & Tools", href: "/products/construction-equipment-tools", icon: HardHat },
+      { name: "Construction Materials & Tools", href: "/products/construction-equipment-tools", icon: HardHat },
     ],
   },
   {

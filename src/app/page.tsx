@@ -80,8 +80,8 @@ export default function Home() {
       link: "/products/industrial-tools-spares"
     },
     {
-      title: "Construction Equipments & Tools",
-      description: "Formwork shuttering oil, waterproof concrete joint tape, needle vibrators, and rebar tools.",
+      title: "Construction Materials & Consumables",
+      description: "Formwork shuttering oil, waterproof concrete joint tape, mastic pads, gunny clothes, and waterproofing chemicals.",
       imageUrl: "/images/construction-equipment-tools.webp",
       label: "Products",
       link: "/products/construction-equipment-tools"
@@ -124,8 +124,11 @@ export default function Home() {
     { title: "Fire Extinguishers", img: "/images/fire-equipment.webp", cat: "Fire Safety" },
     { title: "Plumbing Materials", img: "/images/explore/plumbing.webp", cat: "Construction" },
     { title: "Workplace Helmets", img: "/images/explore/helmet.webp", cat: "Safety" },
-    { title: "Shuttering Mould Oil", img: "/images/subcategories/shuttering-oil.webp", cat: "Construction Tools" },
-    { title: "Concrete Joint Tape", img: "/images/subcategories/concrete-tape.webp", cat: "Construction Tools" },
+    { title: "Shuttering Mould Oil", img: "/images/subcategories/shuttering-oil.webp", cat: "Civil Materials" },
+    { title: "Concrete Joint Tape", img: "/images/subcategories/concrete-tape.webp", cat: "Civil Materials" },
+    { title: "Mastic Expansion Pads", img: "/images/subcategories/mastic-pad.webp", cat: "Civil Materials" },
+    { title: "Gunny Curing Fabric", img: "/images/subcategories/gunny-clothes.webp", cat: "Civil Materials" },
+    { title: "Waterproofing Chemicals", img: "/images/subcategories/waterproofing-chemicals.webp", cat: "Civil Materials" },
     { title: "Cordless Power Tools", img: "/images/subcategories/tools-power-machinery.webp", cat: "Industrial Tools" },
     { title: "Diamond Cutting Blades", img: "/images/subcategories/tools-cutting-blades.webp", cat: "Abrasives" },
     { title: "Precision Drill Bits", img: "/images/subcategories/tools-drill-bits.webp", cat: "Industrial Tools" },

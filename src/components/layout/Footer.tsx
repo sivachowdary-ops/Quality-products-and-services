@@ -100,7 +100,7 @@ export const Footer = () => {
               </li>
               <li>
                 <Link href="/products/construction-equipment-tools" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
-                  Construction Equipments & Tools
+                  Construction Materials & Tools
                 </Link>
               </li>
             </ul>

@@ -18,7 +18,7 @@ export default function NutsBoltsPage() {
     },
     { 
       title: "Hex Nuts & Heavy Nuts", 
-      img: "/images/subcategories/nuts-bolts.webp", 
+      img: "/images/subcategories/fastener-hex-nuts.webp", 
       desc: "Standard metric and imperial hex nuts, heavy hex structural nuts, square nuts, and wing nuts with zinc or black oxide finishes." 
     },
     { 
@@ -33,22 +33,22 @@ export default function NutsBoltsPage() {
     },
     { 
       title: "Socket Head Cap Screws (Allen)", 
-      img: "/images/subcategories/nuts-bolts.webp", 
+      img: "/images/subcategories/fastener-allen-cap-screws.webp", 
       desc: "High-grade alloy steel internal hex socket head cap screws, countersunk socket screws, and grub screws for precision machinery." 
     },
     { 
       title: "Plain & Spring Lock Washers", 
-      img: "/images/subcategories/nuts-bolts.webp", 
+      img: "/images/subcategories/fastener-washers.webp", 
       desc: "DIN 125 flat washers, DIN 127 spring lock washers, star washers, and heavy square bevelled washers for vibration resistance." 
     },
     { 
       title: "Nyloc & Flange Lock Nuts", 
-      img: "/images/subcategories/nuts-bolts.webp", 
+      img: "/images/subcategories/fastener-nyloc-flange.webp", 
       desc: "Nylon insert lock nuts (Nyloc) and serrated flange nuts designed to prevent accidental loosening under extreme mechanical vibration." 
     },
     { 
       title: "Carriage & Foundation Bolts", 
-      img: "/images/subcategories/fastener-threaded-rods.webp", 
+      img: "/images/subcategories/fastener-foundation-bolts.webp", 
       desc: "Round dome head square neck coach bolts and L-type / J-type structural foundation anchor bolts for steel framing." 
     },
   ];

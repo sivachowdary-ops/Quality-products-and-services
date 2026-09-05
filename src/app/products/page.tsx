@@ -91,12 +91,12 @@ export default function ProductsHubPage() {
       bullets: ["Hand Tools & Manual Kits", "Cordless Power Tools", "Precision Drill Bits", "Abrasive Cutting Blades", "Workshop Saws & Machines", "Fastener & Tool Spares"]
     },
     {
-      title: "Construction Equipments & Tools",
-      description: "Formwork shuttering oil, waterproof concrete joint tape, needle vibrators, and rebar fabrication tools.",
+      title: "Construction Materials & Consumables",
+      description: "Formwork shuttering oil, waterproof concrete joint tape, mastic pads, gunny clothes, and waterproofing chemicals.",
       imageUrl: "/images/construction-equipment-tools.webp",
-      label: "Site Equipment",
+      label: "Civil Materials",
       link: "/products/construction-equipment-tools",
-      bullets: ["Shuttering Mould Oil", "Concrete Joint Tape", "Needle Vibrators & Drives", "Rebar Benders & Cutters", "Scaffolding Couplers", "Wheelbarrows & Pans"]
+      bullets: ["Shuttering Mould Oil", "Concrete Joint Tape", "Mastic Expansion Pads", "Gunny Clothes & Curing Fabric", "Waterproofing Chemicals", "SBR Bonding Latex"]
     }
   ];
 

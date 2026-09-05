@@ -43,12 +43,12 @@ export default function WireNailsPage() {
     },
     { 
       title: "Galvanized GI Wire Nails", 
-      img: "/images/subcategories/nail-common-wire.webp", 
+      img: "/images/subcategories/nail-gi-galvanized.webp", 
       desc: "Hot-dip and electro-galvanized rust-resistant nails engineered for outdoor timber construction and high-moisture environments." 
     },
     { 
       title: "Clout & Gypsum Drywall Nails", 
-      img: "/images/subcategories/wire-nails.webp", 
+      img: "/images/subcategories/nail-clout-drywall.webp", 
       desc: "Wide-flat head clout nails for plasterboard fixing, roofing felt attachment, and sheet material fastening." 
     },
   ];
