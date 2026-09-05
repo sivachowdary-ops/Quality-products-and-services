@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Menu, X, ChevronDown, Wrench, Sparkles, FlameKindling, HardHat, NotebookPen, Zap, PaintBucket, Layers, Hammer, Bolt, Boxes } from "lucide-react";
+import { Menu, X, ChevronDown, Wrench, Sparkles, FlameKindling, HardHat, NotebookPen, Zap, PaintBucket, Layers, Hammer, Bolt, Boxes, Droplets } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
@@ -24,6 +24,8 @@ const NAV_LINKS = [
       { name: "Wire Nails", href: "/products/wire-nails", icon: Hammer },
       { name: "Nut & Bolts Fasteners", href: "/products/nuts-bolts", icon: Bolt },
       { name: "MS Binding Wire", href: "/products/ms-binding-wire", icon: Boxes },
+      { name: "Industrial Tools & Spares", href: "/products/industrial-tools-spares", icon: Wrench },
+      { name: "Construction Equipments & Tools", href: "/products/construction-equipment-tools", icon: HardHat },
     ],
   },
   {
@@ -32,6 +34,7 @@ const NAV_LINKS = [
     dropdown: [
       { name: "Construction Works", href: "/services/construction-works", icon: Wrench },
       { name: "Interior Works", href: "/services/interior-works", icon: PaintBucket },
+      { name: "Waterproofing Works", href: "/services/waterproofing-works", icon: Droplets },
     ],
   },
   { name: "Location", href: "/location" },

@@ -93,6 +93,16 @@ export const Footer = () => {
                   MS Binding Wire
                 </Link>
               </li>
+              <li>
+                <Link href="/products/industrial-tools-spares" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Industrial Tools & Spares
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/construction-equipment-tools" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Construction Equipments & Tools
+                </Link>
+              </li>
             </ul>
 
             <h4 className="font-heading font-semibold text-base mb-2">Services</h4>
@@ -105,6 +115,11 @@ export const Footer = () => {
               <li>
                 <Link href="/services/interior-works" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
                   Interior Works
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/waterproofing-works" className="text-[var(--color-text-on-dark-muted)] hover:text-[var(--color-brand-gold)] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-gold)] rounded-sm">
+                  Waterproofing Works
                 </Link>
               </li>
             </ul>

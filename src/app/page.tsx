@@ -71,6 +71,20 @@ export default function Home() {
       imageUrl: "/images/subcategories/ms-binding-wire.webp",
       label: "Products",
       link: "/products/ms-binding-wire"
+    },
+    {
+      title: "Industrial Tools & Spares",
+      description: "Hand tools, power tools, workshop saws, precision drill bits, and cutting/grinding discs.",
+      imageUrl: "/images/industrial-tools-spares.webp",
+      label: "Products",
+      link: "/products/industrial-tools-spares"
+    },
+    {
+      title: "Construction Equipments & Tools",
+      description: "Formwork shuttering oil, waterproof concrete joint tape, needle vibrators, and rebar tools.",
+      imageUrl: "/images/construction-equipment-tools.webp",
+      label: "Products",
+      link: "/products/construction-equipment-tools"
     }
   ];
 
@@ -88,6 +102,13 @@ export default function Home() {
       imageUrl: "/images/interior-works.webp",
       label: "Services",
       link: "/services/interior-works"
+    },
+    {
+      title: "Waterproofing Works",
+      description: "Advanced chemical waterproofing, PU injection grouting, terrace coatings, and basement damp proofing.",
+      imageUrl: "/images/waterproofing-service.webp",
+      label: "Services",
+      link: "/services/waterproofing-works"
     }
   ];
 
@@ -103,6 +124,13 @@ export default function Home() {
     { title: "Fire Extinguishers", img: "/images/fire-equipment.webp", cat: "Fire Safety" },
     { title: "Plumbing Materials", img: "/images/explore/plumbing.webp", cat: "Construction" },
     { title: "Workplace Helmets", img: "/images/explore/helmet.webp", cat: "Safety" },
+    { title: "Shuttering Mould Oil", img: "/images/subcategories/shuttering-oil.webp", cat: "Construction Tools" },
+    { title: "Concrete Joint Tape", img: "/images/subcategories/concrete-tape.webp", cat: "Construction Tools" },
+    { title: "Cordless Power Tools", img: "/images/subcategories/tools-power-machinery.webp", cat: "Industrial Tools" },
+    { title: "Diamond Cutting Blades", img: "/images/subcategories/tools-cutting-blades.webp", cat: "Abrasives" },
+    { title: "Precision Drill Bits", img: "/images/subcategories/tools-drill-bits.webp", cat: "Industrial Tools" },
+    { title: "Workshop Cutting Saws", img: "/images/subcategories/tools-workshop-saws.webp", cat: "Machinery" },
+    { title: "Terrace Waterproofing", img: "/images/waterproofing-service.webp", cat: "Waterproofing" },
     { title: "Floor Cleaners", img: "/images/explore/cleaner.webp", cat: "Hygiene" },
     { title: "Writing Essentials", img: "/images/explore/stationery.webp", cat: "Stationery" },
     { title: "Modular Switches", img: "/images/explore/switches.webp", cat: "Electrical" },

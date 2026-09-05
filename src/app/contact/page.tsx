@@ -131,8 +131,11 @@ export default function ContactPage() {
                     <option value="Wire Nails">Wire Nails</option>
                     <option value="Nut & Bolts Fasteners">Nut & Bolts Fasteners</option>
                     <option value="MS Binding Wire">MS Binding Wire</option>
+                    <option value="Industrial Tools & Spares">Industrial Tools & Spares</option>
+                    <option value="Construction Equipments & Tools">Construction Equipments & Tools</option>
                     <option value="Construction Works">Construction Works</option>
                     <option value="Interior Works">Interior Works</option>
+                    <option value="Waterproofing Works">Waterproofing Works</option>
                   </select>
                 </div>
 

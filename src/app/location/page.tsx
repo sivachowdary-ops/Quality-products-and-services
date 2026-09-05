@@ -96,10 +96,10 @@ export default async function LocationPage() {
               <div>
                 <h3 className="text-2xl font-bold font-heading text-[var(--color-text-on-light)] mb-4">Areas We Serve</h3>
                 <p className="text-[var(--color-text-on-light-muted)] leading-relaxed mb-3">
-                  <strong className="text-[var(--color-text-on-light)]">Products (India-wide):</strong> We supply Fire Equipment, Safety Materials, Housekeeping & Sanitary Solutions, Stationery, Electrical Materials, Aluminium Ladders, Wire Nails, Nut & Bolts Fasteners, and MS Binding Wire across India, including major cities like Hyderabad, Bangalore, Chennai, Mumbai, and Delhi.
+                  <strong className="text-[var(--color-text-on-light)]">Products (India-wide):</strong> We supply Fire Equipment, Safety Materials, Housekeeping & Sanitary Solutions, Stationery, Electrical Materials, Aluminium Ladders, Wire Nails, Nut & Bolts Fasteners, MS Binding Wire, Industrial Tools & Spares, and Construction Equipments & Tools across India, including major cities like Hyderabad, Bangalore, Chennai, Mumbai, and Delhi.
                 </p>
                 <p className="text-[var(--color-text-on-light-muted)] leading-relaxed">
-                  <strong className="text-[var(--color-text-on-light)]">Services (AP & Telangana):</strong> Our Construction Works and Interior Works execution services are currently available across Andhra Pradesh and Telangana, covering Hyderabad, Secunderabad, HITEC City, Gachibowli, Madhapur, Balanagar, Jeedimetla, Patancheru, and surrounding areas.
+                  <strong className="text-[var(--color-text-on-light)]">Services (AP & Telangana):</strong> Our Construction Works, Interior Works, and Waterproofing Works execution services are currently available across Andhra Pradesh and Telangana, covering Hyderabad, Secunderabad, HITEC City, Gachibowli, Madhapur, Balanagar, Jeedimetla, Patancheru, and surrounding areas.
                 </p>
               </div>
             </div>

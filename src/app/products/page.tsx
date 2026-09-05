@@ -81,6 +81,22 @@ export default function ProductsHubPage() {
       label: "Civil Supplies",
       link: "/products/ms-binding-wire",
       bullets: ["18 Gauge (1.2mm) Wire", "20 Gauge (0.9mm) Wire", "16 Gauge (1.6mm) Heavy Wire", "Galvanized GI Wire", "Double Loop Rebar Ties", "25kg / 50kg Bulk Coils"]
+    },
+    {
+      title: "Industrial Tools & Spares",
+      description: "Hand tools, power tools, workshop saws, precision drill bits, and abrasive cutting/grinding discs.",
+      imageUrl: "/images/industrial-tools-spares.webp",
+      label: "Tools & Spares",
+      link: "/products/industrial-tools-spares",
+      bullets: ["Hand Tools & Manual Kits", "Cordless Power Tools", "Precision Drill Bits", "Abrasive Cutting Blades", "Workshop Saws & Machines", "Fastener & Tool Spares"]
+    },
+    {
+      title: "Construction Equipments & Tools",
+      description: "Formwork shuttering oil, waterproof concrete joint tape, needle vibrators, and rebar fabrication tools.",
+      imageUrl: "/images/construction-equipment-tools.webp",
+      label: "Site Equipment",
+      link: "/products/construction-equipment-tools",
+      bullets: ["Shuttering Mould Oil", "Concrete Joint Tape", "Needle Vibrators & Drives", "Rebar Benders & Cutters", "Scaffolding Couplers", "Wheelbarrows & Pans"]
     }
   ];
 
@@ -89,7 +105,7 @@ export default function ProductsHubPage() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <SectionHeading 
           title="Our Products" 
-          subtitle="Explore our nine core product verticals, supplied and delivered to businesses and sites across India."
+          subtitle="Explore our eleven core product verticals, supplied and delivered to businesses and sites across India."
           className="mb-16"
         />
 
